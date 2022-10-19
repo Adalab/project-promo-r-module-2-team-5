@@ -1,3 +1,15 @@
-.form_fill {
-  border-bottom: 10px;
+.form__fill {
+  margin: 0% 1.3%;
+  padding-top: 0.65%;
+  padding-bottom: 1.95%;
+  border-bottom: #d8d8d8 1px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #54585a;
+    font-family: $font-main;
+    font-weight: 600;
+  }
 }
