@@ -1,17 +1,22 @@
 <fieldset class="form__fill">
-    <legend class="form__fill__title"><i class="fa-regular fa-keyboard"></i> Rellena</legend>
+    <legend class="form__fill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
     <label class="form__fill__label" for="fullname">Nombre completo</label>
     <input class="form__fill__input" type="text" id="fullname" name="fullname" placeholder="Ej: Sally hill"
         pattern="[A-Za-z]">
 
     <label class="form__fill__label" for="job">Puesto</label>
-    <input class="form__fill__input" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn"
+    <input class="form__fill__input short-margin" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn"
         pattern="[A-Za-z]">
 
-    <label class="form__fill__label" for="profileImage">Imagen de perfil</label>
-    <label class="form__fill__label cover" for="profileImage">Añadir Imagen</label>
-    <input class="form__fill__input" type="file" id="profileImage" name="profileImage"
-        accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+    <div class="form__fill__box">
+        <div class="form__fill__wrapperOne">
+            <label class="form__fill__label" for="profileImage">Imagen de perfil</label>
+            <label class="form__fill__label--cover" for="profileImage">Añadir imagen</label>
+            <input class="form__fill__input" type="file" id="profileImage" name="profileImage"
+                accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+        </div>
+        <div></div>
+    </div>
 
     <label class="form__fill__label" for="email">Email</label>
     <input class="form__fill__input" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com"

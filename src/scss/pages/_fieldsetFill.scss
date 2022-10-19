@@ -1,7 +1,7 @@
 .form__fill {
-  margin: 0% 1.3%;
-  padding-top: 0.65%;
-  padding-bottom: 1.95%;
+  margin: 0% 6.2%;
+  margin-top: 3%;
+  padding-bottom: 3%;
   border-bottom: #d8d8d8 1px solid;
   display: grid;
   grid-template-columns: 1fr;
@@ -11,5 +11,53 @@
     color: #54585a;
     font-family: $font-main;
     font-weight: 600;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
   }
+  &__label {
+    font-size: 14px;
+    color: #114e4e;
+    font-family: $font-main;
+    font-weight: 400;
+    margin-bottom: 7px;
+    &--cover {
+      width: 140px;
+      height: 30px;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: $font-main;
+      font-weight: 400;
+      line-height: 1.8;
+      text-align: center;
+      background-color: #e17334;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+  }
+  &__input {
+    border: #a2deaf solid 1px;
+    font-size: 14px;
+    color: #c5c5c5;
+    font-family: $font-main;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 3px 0px 7px 10px;
+  }
+  &__box {
+  }
+  &__wrapperOne {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    margin-left: 5.2%;
+    margin-right: 3.9%;
+  }
+}
+.fa-keyboard {
+  color: #e17334;
+}
+.short-margin {
+  margin-bottom: 18px;
 }
