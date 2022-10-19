@@ -1,0 +1,37 @@
+.form__share {
+    border-bottom: #d8d8d8 1px solid;
+    height: 30vh;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px) {
+        margin-bottom: 42.5px;
+    }
+    &__title {
+        color: #54585a;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__icon1 {
+        color: #e17334;
+        padding-right: 12px;
+    }
+    &__btn {
+        background-color: #e17334;
+        border-radius: 12px;
+        border-style: none;
+        color: #ffffff;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 13px 18px;
+        text-transform: uppercase;
+    }
+    &__icon2 {
+        margin-right: 10px;
+    }
+}
