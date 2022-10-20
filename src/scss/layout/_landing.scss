@@ -1,5 +1,5 @@
 .landing {
-    background-color: $color-bg;
+    background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,13 +11,13 @@
         }
         &__title {
             color:#e17334;
-            font: $font-title;
-            size: 19.2 px;
+            font-family: $font-title;
+            font-size: rem(57);
         }
         &__text {
             color: #114e4e;
-            font: $font-main;
-            size: 12.8 px;
+            font-family: $font-main;
+            font-size: 12.8 px;
         }
         &__icons {
             list-style-type: none;
@@ -47,8 +47,8 @@
 
             &__btn {
                 color: #ffffff;
-                font: $font-main;
-                size: 16px;
+                font-family: $font-main;
+                font-size: 16px;
             }
 
         }
