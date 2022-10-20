@@ -1,29 +1,39 @@
 .landing {
-    background-color: grey;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80%;
 
         &__logo__img {
-            width: 100%;
-            height: auto;
+            width: 250px;
+            height: 63px;
+            margin: 95px 35px 35.4px 35px;
+            
         }
         &__title {
             color:#e17334;
             font-family: $font-title;
-            font-size: rem(57);
+            font-weight: bold;
+            font-size: rem(19.2);
+            margin-right: 26px;
+            margin-bottom: rem(17.8);
+            margin-left: 26px;
         }
         &__text {
             color: #114e4e;
             font-family: $font-main;
-            font-size: 12.8 px;
+            font-size: rem(12.8);
+            text-align: center;
+            margin: 0px 26px 18px 26px;
         }
         &__icons {
             list-style-type: none;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
+            width: 268px;
             border: solid 1.6px #e17334;
             border-radius: 4px;
             
@@ -31,6 +41,8 @@
                 width: 60px;
                 height:auto;
                 color: #e17334;
+                font-size: 13px;
+                padding:20px;
             }       
 
         }
@@ -39,11 +51,10 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 129px;
-            height: 42px;
             color: #438792;
             border-radius: 21px;
-            padding-bottom: 30px;
+            /*padding*/
+            margin: 35px 95px 30px 65px;
 
             &__btn {
                 color: #ffffff;
