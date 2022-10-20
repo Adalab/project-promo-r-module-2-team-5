@@ -1,8 +1,34 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__copy {
+    font-size: 17px;
+    color: $palette3-color3;
+    width: 250px;
+    height: 20px;
+    padding-top: 25px;
+    padding-bottom: 37px;
+    
+
+  }
+  &__logo__img {
+    width: 130px;
+    height: 45px;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 5px;
+    &__copy {
+      margin-left: 25px;
+      
+      
+    }
+  }
 }
