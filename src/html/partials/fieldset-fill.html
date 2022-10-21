@@ -4,38 +4,34 @@
         <legend class="form__fill__title"></i>Rellena</legend>
         <i class="fa-solid fa-chevron-up"></i>
     </div>
-    <label class="form__fill__label" for="fullname">Nombre completo</label>
-    <input class="form__fill__input" type="text" id="fullname" name="fullname" placeholder="Ej: Sally hill"
-        pattern="[A-Za-z]">
-
-    <label class="form__fill__label" for="job">Puesto</label>
-    <input class="form__fill__input short-margin" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn"
-        pattern="[A-Za-z]">
-
-    <label class="form__fill__label" for="">Imagen de perfil</label>
     <div class="form__fill__boxTwo">
-        <div class="form__fill__boxTwo--1">
-            <label class="form__fill__label--cover" for="profileImage">Añadir imagen</label>
-            <input class="form__fill__input" type="file" id="profileImage" name="profileImage"
-                accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+        <label class="form__fill__label" for="fullname">Nombre completo</label>
+        <input class="form__fill__input" type="text" id="fullname" name="fullname" placeholder="Ej: Sally hill"
+            pattern="[A-Za-z]">
+        <label class="form__fill__label" for="job">Puesto</label>
+        <input class="form__fill__input short-margin" type="text" id="job" name="job"
+            placeholder="Ej: Front-end unicorn" pattern="[A-Za-z]">
+        <label class="form__fill__label" for="">Imagen de perfil</label>
+        <div class="form__fill__boxThree">
+            <div class="form__fill__boxThree--1">
+                <label class="form__fill__label--cover" for="profileImage">Añadir imagen</label>
+                <input class="form__fill__input" type="file" id="profileImage" name="profileImage"
+                    accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+            </div>
+            <div class="form__fill__boxThree--2"></div>
         </div>
-        <div class="form__fill__boxTwo--2"></div>
+        <label class="form__fill__label" for="email">Email</label>
+        <input class="form__fill__input" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com"
+            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$">
+        <label class="form__fill__label" for="phone">Teléfono</label>
+        <input class="form__fill__input" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+        <label class="form__fill__label" for="linkedin-url">Linkedin</label>
+        <input class="form__fill__input" type="url" id="linkedin-url" name="linkedin-url"
+            placeholder="Ej: linkedin.com/in/sally.hill"
+            pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
+        <label class="form__fill__label" for="github-url">Github</label>
+        <input class="form__fill__input" type="url" id="github-url" name="github-url" placeholder="Ej: @sally-hill"
+            pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
     </div>
-
-    <label class="form__fill__label" for="email">Email</label>
-    <input class="form__fill__input" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com"
-        pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$">
-
-    <label class="form__fill__label" for="phone">Teléfono</label>
-    <input class="form__fill__input" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55"
-        pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
-
-    <label class="form__fill__label" for="linkedin-url">Linkedin</label>
-    <input class="form__fill__input" type="url" id="linkedin-url" name="linkedin-url"
-        placeholder="Ej: linkedin.com/in/sally.hill"
-        pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
-
-    <label class="form__fill__label" for="github-url">Github</label>
-    <input class="form__fill__input" type="url" id="github-url" name="github-url" placeholder="Ej: @sally-hill"
-        pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
 </fieldset>
