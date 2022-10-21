@@ -8,6 +8,18 @@
   padding-left: 45px;
   padding-bottom: 40px;
 
+  @media all and (min-width: 768px) {
+    margin-top: 20px;
+    margin-right: 60px;
+    border-radius: 6px;
+    width: 60vw;
+    padding-top: 173px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+
   &__btn {
     border: solid 1px #ffffff;
     border-radius: 15px;
@@ -21,10 +33,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media all and (min-width: 768px) {
+      transform: translate(-110%, 0%);
+    }
   }
   &__article {
     background-color: white;
     width: 240px;
+    height: 340px;
     border-radius: 2px;
     margin-top: 20px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
