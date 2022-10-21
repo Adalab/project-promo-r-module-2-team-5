@@ -1,4 +1,5 @@
 .footer {
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,14 +11,11 @@
     height: 20px;
     padding-top: 25px;
     padding-bottom: 37px;
-    
-
   }
   &__logo__img {
     width: 130px;
     height: 45px;
   }
-  
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -27,8 +25,6 @@
     padding-top: 5px;
     &__copy {
       margin-left: 25px;
-      
-      
     }
   }
 }

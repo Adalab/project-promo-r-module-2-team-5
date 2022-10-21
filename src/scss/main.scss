@@ -1,11 +1,9 @@
 @import 'core/reset';
 @import 'core/variables';
 @import 'core/rems';
+@import 'core/mixins';
 // @import 'components/code';
 // @import 'components/links';
-@import 'components/iconColorMixin';
-@import 'components/tabletMixin';
-@import 'components/desktopMixin';
 @import 'layout/page';
 @import 'layout/landing';
 @import 'layout/header';

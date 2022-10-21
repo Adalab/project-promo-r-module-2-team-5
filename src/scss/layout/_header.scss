@@ -1,12 +1,13 @@
 .header {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   margin-bottom: 0;
   width: 100%;
+  height: 12vh;
   &__link__logo {
     width: 201px;
     height: 50px;
-    margin: 31px 527px 30px 40px;
-
+    margin-left: 31px;
   }
 }
