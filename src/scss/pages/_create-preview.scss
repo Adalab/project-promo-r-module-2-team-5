@@ -5,19 +5,17 @@
     $background-preview-color2
   );
   padding-top: 35px;
-  padding-left: 45px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media all and (min-width: 768px) {
     margin-top: 20px;
-    margin-right: 60px;
+    margin-right: 40px;
     border-radius: 6px;
     width: 60vw;
     padding-top: 173px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
   }
 
   &__btn {
@@ -33,9 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media all and (min-width: 768px) {
-      transform: translate(-110%, 0%);
-    }
+    transform: translate(-110%, 0%);
   }
   &__article {
     background-color: white;
