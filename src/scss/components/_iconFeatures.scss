@@ -1,6 +1,12 @@
 .fa-keyboard {
   @include icons-color;
 }
+.fa-object-ungroup {
+  @include icons-color;
+}
+.fa-share-nodes {
+  @include icons-color;
+}
 .fa-chevron-up {
   flex-grow: 1;
   text-align: end;
