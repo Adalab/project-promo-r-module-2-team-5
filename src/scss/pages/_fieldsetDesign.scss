@@ -3,12 +3,13 @@
     margin-left: 20px;
     margin-top: 10px;
     padding-bottom: 10px;
+    
+    @include tablet {
+        margin-left: 40px;
+        margin-right: 30px;
+        &__boxOne {
+          width: 329px;
+        }
+      }
 }
 
-@include tablet {
-    margin-left: 40px;
-    margin-right: 30px;
-    &__boxOne {
-      width: 329px;
-    }
-  }

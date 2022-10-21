@@ -32,10 +32,6 @@
         font-weight: 600;
         text-transform: uppercase;
     }
-    &__icon1 { //ESPERANDO A QUE SE DECLARE EN EL LANDING
-        color: #e17334;
-        padding-right: 12px;
-    }
     &__boxTwo {
         // grid-area: btn;
         width: 100%;
@@ -62,6 +58,9 @@
           width: 329px;
         }
     }
+}
+.fa-share-nodes {
+    padding-right: 12px;
 }
 .fa-address-card {
     margin-right: 10px;
