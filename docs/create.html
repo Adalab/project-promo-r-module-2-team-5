@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2eec946f56.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+      <a href="./index.html" class="header__link">
+          <img src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile cards" class="header__link__logo">
+      </a>
+  </header>
+  <main class="create-main">
+    <section class="preview">
+        <button class="preview__btn"><i class="fa-regular fa-trash-can"></i>Reset</button>
+
+
+        <article class="preview__article">
+            <div class="preview__box1">
+                <p class="preview__box1__name">Nombre Apellido</p>
+                <p class="preview__box1__job"> Front-end developer</p>
+            </div>
+            <div class="preview__box2">
+                <img src="./assets/images/astronaut.jpg" alt="Foto del usuario" class="preview__box2__pic">
+            </div>
+            <nav class="preview__nav">
+                <ul class="preview__media">
+                    <li class="preview__media__item"><a href="#" class="preview__media__link"><i
+                                class="fa-solid fa-mobile-screen-button"></i></a></li>
+                    <li class="preview__media__item"><a href="#" class="preview__media__link"><i
+                                class="fa-regular fa-envelope"></i></a></li>
+                    <li class="preview__media__item"><a href="#" class="preview__media__link"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="preview__media__item"><a href="#" class="preview__media__link"><i
+                                class="fa-brands fa-github-alt"></i></a></li>
+                </ul>
+            </nav>
+        </article>
+    </section>
+    <form action="" class="form">
+      <fieldset class="form__design">
+          <div class="form__design__boxOne">
+              <legend class="form__design__title"><i class="fa-regular fa-object-ungroup form__design__ungroupIcon"></i>Diseña</legend>
+              <i class="fa-solid fa-chevron-up"></i>
+          </div>
+          <section class="form__design__colors">
+              <label for="" class="form__design__label">Colores</label>
+              <div class="form__design__rangeBox">
+                  <div class="form__design__colorInput">
+                      <input type="radio" name= "color" class="form__design__radioBtn">
+                      <div class="form__design__p1c1 form__design__colorBox"></div>
+                      <div class="form__design__p1c2 form__design__colorBox"></div>
+                      <div class="form__design__p1c3 form__design__colorBox"></div>
+                  </div>
+                  <div class="form__design__colorInput">
+                      <input type="radio" name= "color" class="form__design__radioBtn">
+                      <div class="form__design__p2c1 form__design__colorBox"></div>
+                      <div class="form__design__p2c2 form__design__colorBox"></div>
+                      <div class="form__design__p2c3 form__design__colorBox"></div>
+                  </div>
+                  <div class="form__design__colorInput">
+                      <input type="radio" name= "color" class="form__design__radioBtn">
+                      <div class="form__design__p3c1 form__design__colorBox"></div>
+                      <div class="form__design__p3c2 form__design__colorBox"></div>
+                      <div class="form__design__p3c3 form__design__colorBox"></div>
+                  </div>
+              </div>
+          </section>
+      </fieldset>
+      <fieldset class="form__fill">
+          <div class="form__fill__boxOne">
+              <i class="fa-regular fa-keyboard"></i>
+              <legend class="form__fill__title"></i>Rellena</legend>
+              <i class="fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="form__fill__boxTwo">
+              <label class="form__fill__label" for="fullname">Nombre completo</label>
+              <input class="form__fill__input" type="text" id="fullname" name="fullname" placeholder="Ej: Sally hill"
+                  pattern="[A-Za-z]">
+              <label class="form__fill__label" for="job">Puesto</label>
+              <input class="form__fill__input short-margin" type="text" id="job" name="job"
+                  placeholder="Ej: Front-end unicorn" pattern="[A-Za-z]">
+              <label class="form__fill__label" for="">Imagen de perfil</label>
+              <div class="form__fill__boxThree">
+                  <div class="form__fill__boxThree--1">
+                      <label class="form__fill__label--cover" for="profileImage">Añadir imagen</label>
+                      <input class="form__fill__input" type="file" id="profileImage" name="profileImage"
+                          accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+                  </div>
+                  <div class="form__fill__boxThree--2"></div>
+              </div>
+              <label class="form__fill__label" for="email">Email</label>
+              <input class="form__fill__input" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com"
+                  pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$">
+              <label class="form__fill__label" for="phone">Teléfono</label>
+              <input class="form__fill__input" type="tel" id="phone" name="phone" placeholder="Ej: 555-55-55-55"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+              <label class="form__fill__label" for="linkedin-url">Linkedin</label>
+              <input class="form__fill__input" type="url" id="linkedin-url" name="linkedin-url"
+                  placeholder="Ej: linkedin.com/in/sally.hill"
+                  pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
+              <label class="form__fill__label" for="github-url">Github</label>
+              <input class="form__fill__input" type="url" id="github-url" name="github-url" placeholder="Ej: @sally-hill"
+                  pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
+          </div>
+      </fieldset>
+      <fieldset class="form__share">
+          <div class="form__share__boxOne">
+              <legend class="form__share__title"><i class="fa-solid fa-share-nodes form__share__nodesIcon"></i>Comparte</legend>
+              <i class="fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="form__share__boxTwo"><button class="form__share__btn"><i class="fa-regular fa-address-card form__share__cardIcon"></i>Crear tarjeta</button></div>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="footer">
+      <small class="footer__copy">Awesome profile-cards @2018</small>
+      <div class="footer__logo">
+        <img src="./assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__logo__img">
+      </div>
+    </footer>
+</body>
+
+</html>
