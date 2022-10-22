@@ -3,3 +3,13 @@ body {
   min-height: 100vh;
   font-family: $font-main;
 }
+
+.create-main {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row-reverse;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
+  }
+}
