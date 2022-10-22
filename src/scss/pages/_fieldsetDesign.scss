@@ -1,9 +1,70 @@
 .form__design {
+    border-bottom: #d8d8d8 1px solid;
     margin-right: 19px;
     margin-left: 20px;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    
+    margin-top: 30px;
+    &__boxOne {
+        display: flex;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: rem(18);
+        color: $subtitle-color;
+        font-weight: 600;
+    }
+    &__ungroupIcon {
+        padding-right: 12px;
+    }
+    &__colors {
+        padding-top: 22px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+    &__label {
+        width: 60%;
+        color: $subtitle-color;
+        font-size: rem(14);
+        margin-left: 19px;
+        text-transform: uppercase;
+    }
+    &__colorInput {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__radioBtn {
+        margin-right: 10px;
+    }
+    &__colorBox {
+        height: 25px;
+        width: 30px;
+    }
+    &__p1c1 {
+        background-color: $palette1-color1;
+    }
+    &__p1c2 {
+        background-color: $palette1-color2;
+    }
+    &__p1c3 {
+        background-color: $palette1-color3;
+    }
+    &__p2c1 {
+        background-color: $palette2-color1;
+    }
+    &__p2c2 {
+        background-color: $palette2-color2;
+    }
+    &__p2c3 {
+        background-color: $palette2-color3;
+    }
+    &__p3c1 {
+        background-color: $palette3-color1;
+    }
+    &__p3c2 {
+        background-color: $palette3-color2;
+    }
+    &__p3c3 {
+        background-color: $palette3-color3;
+    }
     @include tablet {
         margin-left: 40px;
         margin-right: 30px;
