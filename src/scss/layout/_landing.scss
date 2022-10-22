@@ -1,10 +1,11 @@
 .landing {
   height: 85vh;
-  background-color: #f5f5f5;
+  background-color: $background-landing-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 1px #d8d8d8 ;
 
   &__logo__img {
     width: 250px;
@@ -12,20 +13,24 @@
     margin: 95px 35px 35.4px 35px;
   }
   &__title {
-    color: #e17334;
+    color: $primary-color;
     font-family: $font-title;
     font-weight: bold;
     font-size: rem(19.2);
     margin-right: 26px;
-    margin-bottom: rem(17.8);
+    margin-bottom: rem(9.8);
     margin-left: 26px;
   }
   &__text {
-    color: #114e4e;
+    color: $palette1-color1;
     font-family: $font-main;
     font-size: rem(12.8);
+    font-weight: 600;
     text-align: center;
     margin: 0px 26px 18px 26px;
+    max-width: 38ch;
+    line-height: 1.5;
+
   }
   &__icons {
     list-style-type: none;
@@ -33,31 +38,54 @@
     flex-direction: row;
     justify-content: center;
     width: 268px;
-    border: solid 1.6px #e17334;
+    border: solid 1.6px rgba($primary-color, $alpha: 0.21);
     border-radius: 4px;
+    gap:10px;
+    
 
     &__item {
       width: 60px;
       height: auto;
-      color: #54585a;
+      color: $subtitle-color;
       font-size: 13px;
-      padding: 20px;
+      padding: 10px;
+      text-align: center;
     }
+
   }
+  
   &__box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #438792;
+    width: 129px;
+    height: 42px;
+    background-color: $palette1-color2;
     border-radius: 21px;
-    /*padding*/
-    margin: 35px 95px 30px 65px;
+    margin-top: 38.6px;
+    margin-bottom: 30px;
 
     &__btn {
       color: #ffffff;
       font-family: $font-main;
       font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform:uppercase;
+        }
     }
-  }
 }
+.fa-object-ungroup::before {
+     width: 72px;
+    height: 58.5px;
+  }
+.fa-object-keyboard::before {
+    width: 72px;
+    height: 58.5px;
+  }
+.fa-object-share-nodes::before {
+    width: 72px;
+    height: 58.5px;
+  }
+
