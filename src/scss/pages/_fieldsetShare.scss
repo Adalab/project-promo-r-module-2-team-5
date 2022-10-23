@@ -75,7 +75,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__boxText{}
     &__cardText {
         font-size: rem(18);
         font-weight: 600;
@@ -102,7 +101,7 @@
     }
 }
 .hidden {
-    //display: none;
+    display: none; //TO-DO: JS
 }
 .fa-twitter {
     margin-right: 10px;
