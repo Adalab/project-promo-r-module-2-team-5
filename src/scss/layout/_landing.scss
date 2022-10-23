@@ -6,11 +6,17 @@
   justify-content: center;
   align-items: center;
   border-bottom: solid 1px #d8d8d8 ;
-
+  
   &__logo__img {
     width: 250px;
     height: 63px;
     margin: 95px 35px 35.4px 35px;
+
+    @media all and (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+     /* margin: 350px 174px 31px 174px;*/
+    }
   }
   &__title {
     color: $primary-color;
@@ -18,8 +24,11 @@
     font-weight: bold;
     font-size: rem(19.2);
     margin-right: 26px;
-    margin-bottom: rem(9.8);
     margin-left: 26px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
   &__text {
     color: $palette1-color1;
@@ -31,6 +40,11 @@
     max-width: 38ch;
     line-height: 1.5;
 
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 27px;
+    }
+
   }
   &__icons {
     list-style-type: none;
@@ -41,6 +55,13 @@
     border: solid 1.6px rgba($primary-color, $alpha: 0.21);
     border-radius: 4px;
     gap:10px;
+
+    @media all and (min-width: 768px) {
+      width: 325px;
+      border-radius: 5px;
+      margin-bottom: 186px;
+      gap: 20px;
+    }
     
 
     &__item {
@@ -66,6 +87,11 @@
     margin-top: 38.6px;
     margin-bottom: 30px;
 
+    @media all and (min-width: 768px) {
+      margin-bottom: 59px;
+    }
+  
+
     &__btn {
       color: #ffffff;
       font-family: $font-main;
@@ -79,6 +105,8 @@
 .fa-object-ungroup::before {
      width: 72px;
     height: 58.5px;
+
+    
   }
 .fa-object-keyboard::before {
     width: 72px;
