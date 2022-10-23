@@ -1,5 +1,6 @@
 .footer {
   height: 15vh;
+  line-height: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,23 +9,30 @@
     font-size: 17px;
     color: $palette3-color3;
     width: 250px;
-    height: 20px;
-    padding-top: 25px;
-    padding-bottom: 37px;
+    height: 15px;
+
   }
   &__logo__img {
     width: 130px;
     height: 45px;
+    transform: translateY(15px);
+    
   }
 }
 @media screen and (min-width: 768px) {
   .footer {
+    height: 80px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    padding-top: 5px;
+    
     &__copy {
-      margin-left: 25px;
+      margin-right: 225px;
+      margin-top: 9px;
     }
+    &__logo__img {
+      transform: translateY(-5px);
+    }
+
   }
 }
