@@ -65,4 +65,45 @@
         }
     }
 }
-
+.form__collapsible {
+    height: 20vh;
+    border-bottom: #d8d8d8 1px solid;
+    margin-right: 19px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__boxText{}
+    &__cardText {
+        font-size: rem(18);
+        font-weight: 600;
+        margin-bottom: rem(5);
+        text-align: center;
+    }
+    &__errorText {
+        font-size: rem(18);
+        font-weight: 600;
+        margin-bottom: rem(5);
+        text-align: center;
+    }
+    &__cardLink {
+        color: $primary-color;   
+    }
+    &__shareBtn {
+        background-color: $twitter-color;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px 0 30px;
+    }
+}
+.hidden {
+    //display: none;
+}
+.fa-twitter {
+    margin-right: 10px;
+}
