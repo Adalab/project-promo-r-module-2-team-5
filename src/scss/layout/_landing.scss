@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
   border-bottom: solid 1px #d8d8d8 ;
+  @media all and (min-width: 768px) {
+    height: 92vh;
+  }
   
   &__logo__img {
     width: 250px;
@@ -65,6 +68,9 @@
       margin-bottom: 186px;
       gap: 20px;
     }
+    @media all and (min-width: 1024px) {
+      margin-bottom: 80px;
+    }
     
 
     &__item {
@@ -94,8 +100,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 129px;
-    height: 42px;
     background-color: $palette1-color2;
     border-radius: 21px;
     margin-top: 38.6px;
@@ -111,8 +115,10 @@
       font-family: $font-main;
       font-size: 16px;
       font-weight: 600;
+      padding: 12px 20px;
       text-decoration: none;
       text-transform:uppercase;
+
         }
     }
 }

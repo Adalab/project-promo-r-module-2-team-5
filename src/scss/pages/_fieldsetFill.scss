@@ -10,13 +10,9 @@
     margin-right: 30px;
   }
   &__boxOne {
-    width: 281px;
     display: flex;
     gap: rem(10);
     margin-bottom: rem(28);
-    @include tablet {
-      width: 329px;
-    }
   }
   &__boxTwo {
     display: grid;

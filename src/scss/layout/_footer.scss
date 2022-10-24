@@ -1,38 +1,31 @@
 .footer {
+  border-top: solid 1px #d8d8d8;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 15vh;
-  line-height: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   &__copy {
-    font-size: 17px;
+    font-size: rem(14);
     color: $palette3-color3;
-    width: 250px;
-    height: 15px;
-
   }
-  &__logo__img {
-    width: 130px;
-    height: 45px;
-    transform: translateY(15px);
-    
+  &__logo {
+    width: 103px;
+    height: 40px;
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 @media screen and (min-width: 768px) {
   .footer {
-    height: 80px;
+    height: 8vh;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
-    
-    &__copy {
-      margin-right: 225px;
-      margin-top: 9px;
-    }
-    &__logo__img {
-      transform: translateY(-5px);
-    }
-
   }
 }
