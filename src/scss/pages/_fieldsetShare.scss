@@ -58,9 +58,6 @@
     @include tablet {
         margin-left: 40px;
         margin-right: 30px;
-        &__boxOne {
-          width: 329px;
-        }
     }
 }
 .form__collapsible {
@@ -99,7 +96,7 @@
     }
 }
 .hidden {
-    display: none; //TO-DO: JS
+    //display: none; //TO-DO: JS
 }
 .fa-twitter {
     margin-right: 10px;

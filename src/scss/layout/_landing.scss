@@ -68,6 +68,9 @@
       margin-bottom: 186px;
       gap: 20px;
     }
+    @media all and (min-width: 1024px) {
+      margin-bottom: 80px;
+    }
     
 
     &__item {
