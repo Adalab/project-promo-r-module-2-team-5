@@ -50,7 +50,6 @@
 
   }
   &__icons {
-    /*list-style-type: none;*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -62,6 +61,24 @@
     gap:10px;
     padding: 10px;
 
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      gap:2px;
+      padding: 10px;
+    
+      &__text {
+        font-size: 13px;
+        color: $subtitle-color;
+        text-align: center;
+      }
+     
+    }
+    
     @media all and (min-width: 768px) {
       width: 325px;
       border-radius: 5px;
@@ -70,27 +87,6 @@
     }
     @media all and (min-width: 1024px) {
       margin-bottom: 80px;
-    }
-    
-
-    &__item {
-     /* width: 60px;
-      height: auto;
-      color: $subtitle-color;
-      font-size: 13px;
-      
-      text-align: center;*/
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-
-      &__text {
-        font-size: 13px;
-        color: $subtitle-color;
-        text-align: center;
-      }
     }
 
   }
@@ -122,24 +118,19 @@
         }
     }
 }
+
 .fa-object-ungroup::before {
-    width: 72px;
-    height: 58.5px;
-    /*position: absolute;
-    transform: translate(-50%, -50%);
-    right: 50%;
-    top: 74%;*/
-
-    
-  }
+  width: 72px;
+  height: 58.5px;
+     
+}
 .fa-object-keyboard::before {
-    width: 72px;
-    height: 58.5px;
-   
-  }
+  width: 72px;
+  height: 58.5px;
+ 
+}
 .fa-object-share-nodes::before {
-    width: 72px;
-    height: 58.5px;
-    
-  }
+  width: 72px;
+  height: 58.5px;
 
+}
