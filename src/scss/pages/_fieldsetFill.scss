@@ -6,7 +6,6 @@
   border-bottom: #d8d8d8 1px solid;
   display: grid;
   &__boxOne {
-    width: 281px;
     display: flex;
     gap: rem(10);
     margin-bottom: rem(28);
@@ -66,9 +65,6 @@
   @include tablet {
     margin-left: 40px;
     margin-right: 30px;
-    &__boxOne {
-      width: 329px;
-    }
   }
 }
 .short-margin {
