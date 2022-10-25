@@ -1,1 +1,0 @@
-//Constantes y elementos DOM
