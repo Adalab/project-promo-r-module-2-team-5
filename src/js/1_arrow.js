@@ -14,7 +14,7 @@
 
 //Funciones
 //------(creo funciones manejadoras para cada evento click de cada flecha)
-//------(Requisitos: solo una seccion puede permanecer abierta, no puede haber varias abiertas a la vez / No podemos tener todas las secciones cerradas al mismo tiempo)
+//------(Requisitos: debe abrir y cerrar la sección añadiendo la clase collapsed a la seccion y rotando la flecha añadiendo la clase upsidedown / solo una seccion puede permanecer abierta, no puede haber varias secciones abiertas a la vez / No podemos tener todas las secciones cerradas al mismo tiempo)
 //function handleclickFill() { //Lo mismo para todas las secciones
 //if (formFieldsetFill.classList.contains('collapsed')) {
 //formFieldsetFill.classList.remove('collapsed');
@@ -38,7 +38,7 @@
 //}
 
 //*** Eventos
-//------(Aplico los eventos click sobre las flechas)
+//------(Aplico los eventos click sobre cada flecha)
 // arrowDownDesign.addEventListener('click', handleclick(arrow));
 // arrowDownFill.addEventListener('click', handleclickFill);
 // arrowDownShare.addEventListener('click', handleclick(arrow));
