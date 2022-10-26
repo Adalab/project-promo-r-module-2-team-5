@@ -85,7 +85,7 @@
   }
 
   &__box {
-    display: flex;
+    // display: flex;
     //solo con el flex genera una cajita pero el resto de propiedades no hace falta aplicarlas porque no hacen nada
     // flex-direction: column;
     // justify-content: flex-start;
@@ -101,6 +101,7 @@
     }
 
     &__btn {
+      display: block;
       color: #ffffff;
       font-family: $font-main;
       font-size: 16px;
