@@ -3,10 +3,12 @@
   background-color: $background-landing-color;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  border-bottom: solid 1px #d8d8d8 ;
-  
+  border-bottom: solid 1px #d8d8d8;
+  @include tablet {
+    height: 92vh;
+  }
   &__logo__img {
     width: 250px;
     height: 63px;
@@ -15,7 +17,7 @@
     @media all and (min-width: 768px) {
       width: 419px;
       height: 105px;
-     /* margin: 350px 174px 31px 174px;*/
+      /* margin: 350px 174px 31px 174px;*/
     }
   }
   &__title {
@@ -44,90 +46,84 @@
       font-size: 16px;
       margin-bottom: 27px;
     }
-
   }
   &__icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    position:relative;
+    position: relative;
     width: 268px;
     border: solid 1.6px rgba($primary-color, $alpha: 0.21);
     border-radius: 4px;
-    gap:10px;
     padding: 10px;
-
-
+    margin-bottom: 38.6px;
+    @include tablet {
+      width: 325px;
+      border-radius: 5px;
+      margin-bottom: 186px;
+      gap: 20px;
+      font-size: rem(16);
+    }
     &__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-items: center;
-      gap:2px;
+      gap: 5px;
       padding: 10px;
-    
       &__text {
-        font-size: 13px;
+        font-size: rem(13);
         color: $subtitle-color;
         text-align: center;
+        @include tablet {
+          font-size: rem(16);
+        }
       }
-     
     }
-    
-    @media all and (min-width: 768px) {
-      width: 325px;
-      border-radius: 5px;
-      margin-bottom: 186px;
-      gap: 20px;
-    }
-    @media all and (min-width: 1024px) {
-      margin-bottom: 80px;
-    }
-
   }
-  
-  &__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  &__btn {
+    display: block;
+    text-align: center;
+    padding: 13px;
     width: 129px;
     height: 42px;
+    color: #ffffff;
+    font-family: $font-main;
     background-color: $palette1-color2;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
     border-radius: 21px;
-    margin-top: 38.6px;
     margin-bottom: 30px;
-
-    @media all and (min-width: 768px) {
-      margin-bottom: 59px;
-    }
-  
-
-    &__btn {
-      color: #ffffff;
-      font-family: $font-main;
-      font-size: 16px;
-      font-weight: 600;
-      text-decoration: none;
-      text-transform:uppercase;
-        }
-    }
+  }
+}
+.icon_fill {
+  position: relative;
+  left: 8.5px;
+  @include tablet {
+  }
 }
 
-.fa-object-ungroup::before {
-  width: 72px;
-  height: 58.5px;
-     
+.fa-keyboard {
+  font-size: rem(22.4);
+  @include tablet {
+    font-size: rem(28);
+  }
 }
-.fa-object-keyboard::before {
-  width: 72px;
-  height: 58.5px;
- 
-}
-.fa-object-share-nodes::before {
-  width: 72px;
-  height: 58.5px;
 
+.fa-object-ungroup {
+  font-size: rem(22.4);
+  @include tablet {
+    font-size: rem(28);
+  }
+}
+
+.fa-share-nodes {
+  font-size: rem(22.4);
+  @include tablet {
+    font-size: rem(28);
+  }
 }
