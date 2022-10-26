@@ -7,9 +7,7 @@
 .fa-share-nodes {
   @include icons-color;
 }
-.fa-chevron-up,
-.fa-chevron-down {
-  flex-grow: 1;
-  text-align: end;
+.fa-chevron-up {
+  transform: translateY(4px);
   color: $subtitle-color;
 }

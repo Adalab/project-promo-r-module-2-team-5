@@ -18,6 +18,7 @@
     display: grid;
   }
   &__title {
+    flex-grow: 1;
     text-transform: uppercase;
     font-size: rem(18);
     color: $subtitle-color;
@@ -70,7 +71,6 @@
 .short-margin {
   margin-bottom: rem(18);
 }
-
 .collapsed {
   display: none;
 }
