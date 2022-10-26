@@ -1,55 +1,67 @@
+//----------(PLANTEAMIENTO DEMO YARA)-------------------
+
 // 'use strict';
 
-//Constantes y elementos DOM
-// const arrowUp = document.querySelector('.js-arrow-up');
-// const arrowDown = document.querySelector('.js-arrow-down');
+//**** Elementos DOM
+//---(Almaceno en constantes los elementos flecha)
+// const arrowDownDesign = document.querySelector('.js-arrow-down-design');
+// const arrowDownFill = document.querySelector('.js-arrow-down-fill');
+// const arrowDownShare = document.querySelector('.js-arrow-down-share');
+//---(Almaceno en constantes las cajitas colapsables)
+// const formFieldsetDesign = document.querySelector('.js-fieldset-design');
 // const formFieldsetFill = document.querySelector('.js-fieldset-fill');
+// const formFieldsetShare = document.querySelector('.js-fieldset-share');
 
 //Funciones
-// function open() {
-//   arrowDown.classList.add('collapsed');
-//   arrowUp.classList.remove('collapsed');
-//   formFieldset.classList.remove('collapsed');
-//Añadir que si las otras dos secciones fieldset design y fieldset share no tienen la clase collapse se les debe añadir
-//para que solo haya abierta una seccion at a time. Si la tienen entonces no se hace nada
+//------(creo funciones manejadoras para cada evento click de cada flecha)
+//------(Requisitos: solo una seccion puede permanecer abierta, no puede haber varias abiertas a la vez / No podemos tener todas las secciones cerradas al mismo tiempo)
+//function handleclickFill() { //Lo mismo para todas las secciones
+//if (formFieldsetFill.classList.contains('collapsed')) {
+//formFieldsetFill.classList.remove('collapsed');
+//arrowDownFill.classList.add('upsideDown');
+//if (!formFieldsetDesign.classList.contains('collapsed')) {
+//formFieldsetFill.classList.add('collapsed');
+//arrowDownFill.classList.remove('upsideDown');
+//}
+//if (!formFieldsetShare.classList.contains('collapsed')) {
+// formFieldsetFill.classList.add('collapsed');
+//arrowDownFill.classList.remove('upsideDown');
+//}
+//} else if (
+//!formFieldsetFill.classList.contains('collapsed') &&
+//formFieldsetShare.classList.contains('collapsed') &&
+//formFieldsetDesign.classList.contains('collapsed')
+//) {
+// formFieldsetFill.classList.remove('collapsed');
+// arrowDownFill.classList.add('upsideDown');
 // }
+//}
 
-// function close() {
-//   arrowDown.classList.remove('collapsed');
-//   arrowUp.classList.add('collapsed');
-//   formFieldset.classList.add('collapsed');
-// }
+//*** Eventos
+//------(Aplico los eventos click sobre las flechas)
+// arrowDownDesign.addEventListener('click', handleclick(arrow));
+// arrowDownFill.addEventListener('click', handleclickFill);
+// arrowDownShare.addEventListener('click', handleclick(arrow));
 
-//Eventos
-// arrowDown.addEventListener('click', () => {
-//   if (!arrowDown.classList.contains('collapsed')) {
-//     open();
-//   }
-// });
+// [Quizá se pueda reducir más el código todavía aplicando arrays. Se almacenarían todas las flechas dentro de una misma constante aplicando la clase común js-arrow-down a todas las flechas, llamandola y guardandola en esta constante / sería esta constante sobre la que se aplicaría el evento click / luego sería en la function donde dependiendo del elemento del array sobre el que se hiciera click se aplicarían unas acciones u otras ya que identificaría sobre qué flecha estamos haciendo click]
 
-// arrowUp.addEventListener('click', () => {
-//   if (arrowDown.classList.contains('collapsed')) {
-//     close();
-//   }
-// });
+// ------------------------------------- (PLANTEAMIENTO ENTRE TODAS)------------------
 
-// -------------------------------------
-
-'use strict';
+// 'use strict';
 
 // 1.Llamar clases de js que intervengan en la accion[HECHO]
 // 2.3 eventos click en las flechas
 // 3. Dentro del evento classlist add y remove
 
 //Elementos del DOM
-const arrowDown = document.querySelector('.js-arrow-down-fill');
+//const arrowDown = document.querySelector('.js-arrow-down-fill');
 
 //Variables globales
 
 //Funciones
 
 //Eventos
-arrowDown.addEventListener('click', () => {
-  const fieldsetFill = document.querySelector('.js-fieldset-fill');
-  fieldsetFill.classList.remove('collapsed');
-});
+//arrowDown.addEventListener('click', () => {
+//const fieldsetFill = document.querySelector('.js-fieldset-fill');
+//fieldsetFill.classList.remove('collapsed');
+//});
