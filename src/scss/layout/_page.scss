@@ -11,5 +11,6 @@ body {
   @media all and (min-width: 768px) {
     flex-direction: row-reverse;
     background: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
+    min-height: 80vh;
   }
 }
