@@ -65,3 +65,12 @@
 //const fieldsetFill = document.querySelector('.js-fieldset-fill');
 //fieldsetFill.classList.remove('collapsed');
 //});
+
+arrowDesign.addEventListener('click', () => {
+    if (designSection.classList.contains('collapsed')) {
+       fillSection.classList.add('collapsed');
+       shareSection.classList.add('collapsed');
+       designSection.classList.remove('collapsed');
+       arrowDesign.classList.add('upsideDown');
+    }
+   };
