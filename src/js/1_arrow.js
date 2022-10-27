@@ -39,9 +39,9 @@
 
 //*** Eventos
 //------(Aplico los eventos click sobre cada flecha)
-// arrowDownDesign.addEventListener('click', handleclick(arrow));
+// arrowDownDesign.addEventListener('click', handleclickDesign);
 // arrowDownFill.addEventListener('click', handleclickFill);
-// arrowDownShare.addEventListener('click', handleclick(arrow));
+// arrowDownShare.addEventListener('click', handleclickShare);
 
 // [Quizá se pueda reducir más el código todavía aplicando arrays. Se almacenarían todas las flechas dentro de una misma constante aplicando la clase común js-arrow-down a todas las flechas, llamandola y guardandola en esta constante / sería esta constante sobre la que se aplicaría el evento click / luego sería en la function donde dependiendo del elemento del array sobre el que se hiciera click se aplicarían unas acciones u otras ya que identificaría sobre qué flecha estamos haciendo click]
 
