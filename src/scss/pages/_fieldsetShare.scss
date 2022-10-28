@@ -1,6 +1,5 @@
 .form__share {
   border-bottom: #d8d8d8 1px solid;
-  height: 20vh;
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 10px;
@@ -8,20 +7,13 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: 1fr 1fr 0.5fr;
-  // gap: 0px 0px;
-  // grid-template-areas:
-  // "boxOne boxOne ."
-  // ". btn ."
-  // ". . .";
   &__boxOne {
-    // grid-area: boxOne;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    cursor: pointer;
+    padding-bottom: 10px;
   }
   &__title {
     flex-grow: 1;
@@ -35,12 +27,12 @@
     padding-right: 12px;
   }
   &__boxTwo {
-    // grid-area: btn;
     width: 100%;
     height: 93%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 30px;
   }
   &__btn {
     background-color: #e17334;

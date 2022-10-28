@@ -5,9 +5,6 @@
   }
 }
 .upsideDown {
-  transform: rotate(180deg) translateY(4px);
-}
-.fa-chevron-down:active {
-  transition: transform 2s ease-in-out;
-  cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
 }
