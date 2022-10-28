@@ -12,7 +12,6 @@ for (let i = 0; i < titleHeader.length; i++) {
         !content[j].classList.contains('collapsed') ? null : content[j].classList.add('collapsed');
         arrow[j].classList.contains('upsideDown') ? arrow[j].classList.remove('upsideDown') : null;
         !arrow[j].classList.contains('upsideDown') ? null : arrow[j].classList.add('upsideDown');
-
       } else {
         content[j].classList.add('collapsed');
         arrow[j].classList.add('upsideDown');
