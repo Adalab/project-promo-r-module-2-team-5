@@ -37,6 +37,9 @@
 // }
 //}
 
+if (i === j) {
+}
+
 //*** Eventos
 //------(Aplico los eventos click sobre cada flecha)
 // arrowDownDesign.addEventListener('click', handleclickDesign);
@@ -67,10 +70,10 @@
 //});
 
 arrowDesign.addEventListener('click', () => {
-    if (designSection.classList.contains('collapsed')) {
-       fillSection.classList.add('collapsed');
-       shareSection.classList.add('collapsed');
-       designSection.classList.remove('collapsed');
-       arrowDesign.classList.add('upsideDown');
-    }
-   };
+  if (designSection.classList.contains('collapsed')) {
+    fillSection.classList.add('collapsed');
+    shareSection.classList.add('collapsed');
+    designSection.classList.remove('collapsed');
+    arrowDesign.classList.add('upsideDown');
+  }
+});
