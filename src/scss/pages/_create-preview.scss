@@ -47,7 +47,6 @@
     font-family: $font-card;
     line-height: 1.5;
     padding-left: rem(20);
-    border-left: 5px solid $palette1-color1;
 
     &__name {
       font-size: rem(18);
@@ -67,13 +66,9 @@
     display: flex;
     gap: 10px;
 
-    &__link {
-      color: $palette1-color1;
-    }
     &__item {
       width: 32px;
       height: 32px;
-      border: solid 2px $palette1-color3;
       border-radius: 16px;
       display: flex;
       justify-content: center;
@@ -91,4 +86,34 @@
 
 .fa-trash-can {
   margin-right: 5px;
+}
+
+.palette1-color2 {
+  border-left: 5px solid $palette1-color2;
+}
+.palette2-color2 {
+  border-left: 5px solid $palette2-color2;
+}
+.palette3-color2 {
+  border-left: 5px solid $palette3-color2;
+}
+
+.palette1-color1 {
+  color: $palette1-color1;
+}
+.palette2-color1 {
+  color: $palette2-color1;
+}
+.palette3-color1 {
+  color: $palette3-color1;
+}
+
+.palette1-color3 {
+  border: solid 2px $palette1-color3;
+}
+.palette2-color3 {
+  border: solid 2px $palette2-color3;
+}
+.palette3-color3 {
+  border: solid 2px $palette3-color3;
 }
