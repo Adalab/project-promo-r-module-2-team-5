@@ -1,79 +1,82 @@
-//----------(PLANTEAMIENTO DEMO YARA)-------------------
+// eslint-disable-next-line strict
+const titleHeader = document.querySelectorAll('.js_fieldset_boxOne');
+const arrow = document.querySelectorAll('.js_arrow');
+const content = document.querySelectorAll('.js_boxTwo');
 
-// 'use strict';
-
-//**** Elementos DOM
-//---(Almaceno en constantes los elementos flecha)
-// const arrowDownDesign = document.querySelector('.js-arrow-down-design');
-// const arrowDownFill = document.querySelector('.js-arrow-down-fill');
-// const arrowDownShare = document.querySelector('.js-arrow-down-share');
-//---(Almaceno en constantes las cajitas colapsables)
-// const formFieldsetDesign = document.querySelector('.js-fieldset-design');
-// const formFieldsetFill = document.querySelector('.js-fieldset-fill');
-// const formFieldsetShare = document.querySelector('.js-fieldset-share');
-
-//Funciones
-//------(creo funciones manejadoras para cada evento click de cada flecha)
-//------(Requisitos: debe abrir y cerrar la sección añadiendo la clase collapsed a la seccion y rotando la flecha añadiendo la clase upsidedown / solo una seccion puede permanecer abierta, no puede haber varias secciones abiertas a la vez / No podemos tener todas las secciones cerradas al mismo tiempo)
-//function handleclickFill() { //Lo mismo para todas las secciones
-//if (formFieldsetFill.classList.contains('collapsed')) {
-//formFieldsetFill.classList.remove('collapsed');
-//arrowDownFill.classList.add('upsideDown');
-//if (!formFieldsetDesign.classList.contains('collapsed')) {
-//formFieldsetFill.classList.add('collapsed');
-//arrowDownFill.classList.remove('upsideDown');
-//}
-//if (!formFieldsetShare.classList.contains('collapsed')) {
-// formFieldsetFill.classList.add('collapsed');
-//arrowDownFill.classList.remove('upsideDown');
-//}
-//} else if (
-//!formFieldsetFill.classList.contains('collapsed') &&
-//formFieldsetShare.classList.contains('collapsed') &&
-//formFieldsetDesign.classList.contains('collapsed')
-//) {
-// formFieldsetFill.classList.remove('collapsed');
-// arrowDownFill.classList.add('upsideDown');
-// }
-//}
-
-if (i === j) {
+for (let i = 0; i < titleHeader.length; i++) {
+  titleHeader[i].addEventListener('click', () => {
+    for (let j = 0; j < content.length; j++) {
+      if (i === j) {
+        content[j].classList.contains('collapsed')
+          ? content[j].classList.remove('collapsed')
+          : null;
+        !content[j].classList.contains('collapsed')
+          ? null
+          : content[j].classList.add('collapsed');
+        arrow[j].classList.contains('upsideDown')
+          ? arrow[j].classList.remove('upsideDown')
+          : null;
+        !arrow[j].classList.contains('upsideDown')
+          ? null
+          : arrow[j].classList.add('upsideDown');
+      } else {
+        content[j].classList.add('collapsed');
+        arrow[j].classList.add('upsideDown');
+      }
+    }
+  });
 }
+/*https://softauthor.com/accordion-menu-in-vanilla-javascript/*/
 
-//*** Eventos
-//------(Aplico los eventos click sobre cada flecha)
-// arrowDownDesign.addEventListener('click', handleclickDesign);
-// arrowDownFill.addEventListener('click', handleclickFill);
-// arrowDownShare.addEventListener('click', handleclickShare);
+// ESTO FUNCIONA
+/*for (let i = 0; i < titleHeader.length; i++) {
+   titleHeader[i].addEventListener('click', () => {
+      if(content[i].classList.contains('collapsed')) {
+         content[i].classList.remove('collapsed');
+      } 
+      if() {
+         content[i].classList.add('collapsed');
+      }
+   })
+}
+*/
+/*LO MISMO PERO CON TERNARY OPERATOR
+for (let i = 0; i < titleHeader.length; i++) {
+   titleHeader[i].addEventListener('click', () => {
+      content[i].classList.contains('collapsed') ? content[i].classList.remove('collapsed') : content[i].classList.add('collapsed');
+   })
+}
+*/
 
-// [Quizá se pueda reducir más el código todavía aplicando arrays. Se almacenarían todas las flechas dentro de una misma constante aplicando la clase común js-arrow-down a todas las flechas, llamandola y guardandola en esta constante / sería esta constante sobre la que se aplicaría el evento click / luego sería en la function donde dependiendo del elemento del array sobre el que se hiciera click se aplicarían unas acciones u otras ya que identificaría sobre qué flecha estamos haciendo click]
+/*FRACASO 1 */
+/*titleHeader.forEach(headerElement => {
+   console.log(headerElement);
+   headerElement.addEventListener('click', () => {
+      if(headerElement.classList.contains('collapsed')) {
+      headerElement.classList.remove('collapsed');
+   } else {
+      titleHeader.forEach(headerEl => {
+         headerEl.classList.remove('collapsed');
+      })
+      headerElement.classList.toggle('collapsed');
+   })
+})*/
 
-// ------------------------------------- (PLANTEAMIENTO ENTRE TODAS)------------------
-
-// 'use strict';
-
-// 1.Llamar clases de js que intervengan en la accion[HECHO]
-// 2.3 eventos click en las flechas
-// 3. Dentro del evento classlist add y remove
-
-//Elementos del DOM
-//const arrowDown = document.querySelector('.js-arrow-down-fill');
-
-//Variables globales
-
-//Funciones
-
-//Eventos
-//arrowDown.addEventListener('click', () => {
-//const fieldsetFill = document.querySelector('.js-fieldset-fill');
-//fieldsetFill.classList.remove('collapsed');
-//});
-
-arrowDesign.addEventListener('click', () => {
-  if (designSection.classList.contains('collapsed')) {
-    fillSection.classList.add('collapsed');
-    shareSection.classList.add('collapsed');
-    designSection.classList.remove('collapsed');
-    arrowDesign.classList.add('upsideDown');
-  }
-});
+/*FRACASO 2 */
+/*
+function hideContent (el) {
+   if(el.classList.contains('collapsed')) {
+     el.classList.remove('collapsed');
+   } else {
+    el.classList.add('collapsed');
+   }
+ }
+ 
+ 
+ 
+ titleHeader.forEach(headerElement => {
+   headerElement.addEventListener('click', () => {
+     content.forEach(hideContent);
+   });
+ });
+*/

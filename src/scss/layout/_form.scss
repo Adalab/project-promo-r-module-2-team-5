@@ -7,3 +7,7 @@
 .upsideDown {
   transform: rotate(180deg) translateY(4px);
 }
+.fa-chevron-down:active {
+  transition: transform 2s ease-in-out;
+  cursor: pointer;
+}
