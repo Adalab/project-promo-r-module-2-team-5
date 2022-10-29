@@ -2,7 +2,6 @@
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 10px;
-  padding-bottom: 10px;
   border-bottom: #d8d8d8 1px solid;
   display: grid;
   @include tablet {
@@ -11,13 +10,18 @@
   }
   &__boxOne {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: rem(10);
-    margin-bottom: rem(28);
+    padding-bottom: 10px;
+    cursor: pointer;
   }
   &__boxTwo {
+    padding-top: 15px;
     display: grid;
   }
   &__title {
+    flex-grow: 1;
     text-transform: uppercase;
     font-size: rem(18);
     color: $subtitle-color;
@@ -70,6 +74,6 @@
 .short-margin {
   margin-bottom: rem(18);
 }
-.fa-keyboard {
-  font-size: rem(18);
+.collapsed {
+  display: none;
 }

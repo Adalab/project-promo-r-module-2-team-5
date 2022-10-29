@@ -1,10 +1,10 @@
 <fieldset class="form__fill">
-    <div class="form__fill__boxOne">
+    <div class="form__fill__boxOne js_fieldset_boxOne">
         <i class="fa-regular fa-keyboard"></i>
         <legend class="form__fill__title"></i>Rellena</legend>
-        <i class="fa-solid fa-chevron-up"></i>
+        <i class="fa-solid fa-chevron-up js_arrow upsideDown"></i>
     </div>
-    <div class="form__fill__boxTwo">
+    <section class="form__fill__boxTwo js_boxTwo collapsed">
         <label class="form__fill__label" for="fullname">Nombre completo</label>
         <input class="form__fill__input" type="text" id="fullname" name="fullname" placeholder="Ej: Sally hill"
             pattern="[A-Za-z]">
@@ -33,5 +33,5 @@
         <label class="form__fill__label" for="github-url">Github</label>
         <input class="form__fill__input" type="url" id="github-url" name="github-url" placeholder="Ej: @sally-hill"
             pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
-    </div>
+    </section>
 </fieldset>

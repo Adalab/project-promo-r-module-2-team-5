@@ -6,7 +6,11 @@
   justify-content: flex-end;
   align-items: center;
   border-bottom: solid 1px #d8d8d8;
+<<<<<<< HEAD
   @media all and (min-width: 768px) {
+=======
+  @include tablet {
+>>>>>>> main
     height: 92vh;
   }
   &__logo__img {
@@ -49,27 +53,45 @@
   &__icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     width: 268px;
     border: solid 1.6px rgba($primary-color, $alpha: 0.21);
     border-radius: 4px;
+<<<<<<< HEAD
     gap: 10px;
     padding: 10px;
+=======
+    padding: 10px;
+    margin-bottom: 38.6px;
+    @include tablet {
+      width: 325px;
+      border-radius: 5px;
+      margin-bottom: 186px;
+      gap: 20px;
+      font-size: rem(16);
+    }
+>>>>>>> main
     &__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center;
       align-items: center;
+<<<<<<< HEAD
       gap: 2px;
       padding: 10px;
 
+=======
+      gap: 5px;
+      padding: 10px;
+>>>>>>> main
       &__text {
-        font-size: 13px;
+        font-size: rem(13);
         color: $subtitle-color;
         text-align: center;
+<<<<<<< HEAD
       }
     }
 
@@ -129,6 +151,53 @@
 
 //Aplicando este código de abajo le damos el tamaño indicado en el zeplin
 .fa-keyboard {
+=======
+        @include tablet {
+          font-size: rem(16);
+        }
+      }
+    }
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    width: 129px;
+    height: 42px;
+    color: #ffffff;
+    font-family: $font-main;
+    background-color: $palette1-color2;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 21px;
+    margin-bottom: 30px;
+  }
+}
+.icon_fill {
+  position: relative;
+  left: 8.5px;
+  @include tablet {
+  }
+}
+
+.fa-keyboard {
+  font-size: rem(22.4);
+  @include tablet {
+    font-size: rem(28);
+  }
+}
+
+.fa-object-ungroup {
+  font-size: rem(22.4);
+  @include tablet {
+    font-size: rem(28);
+  }
+}
+
+.fa-share-nodes {
+>>>>>>> main
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);

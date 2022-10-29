@@ -1,3 +1,10 @@
 .form {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  @media all and (min-width: 768px) {
+    width: 40vw;
+  }
+}
+.upsideDown {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
 }
