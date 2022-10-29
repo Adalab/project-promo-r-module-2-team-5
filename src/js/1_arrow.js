@@ -1,3 +1,4 @@
+'use strict'; 
 
 // eslint-disable-next-line strict
 const titleHeader = document.querySelectorAll('.js_fieldset_boxOne');
