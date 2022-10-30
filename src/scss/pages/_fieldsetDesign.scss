@@ -70,6 +70,15 @@
   &__p3c3 {
     background-color: $palette3-color3;
   }
+  &__p4c1 {
+    background-color: #7895B2;
+  }
+  &__p4c2 {
+    background-color: #E8DFCA;
+  }
+  &__p4c3 {
+    background-color: #AEBDCA;
+  }
   @include tablet {
     margin-left: 40px;
     margin-right: 30px;
