@@ -5,6 +5,10 @@
   margin-top: 30px;
   &__boxOne {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    padding-bottom: 10px;
   }
   &__title {
     flex-grow: 1;
@@ -17,7 +21,7 @@
     padding-right: 12px;
   }
   &__colors {
-    padding-top: 22px;
+    padding-top: 12px;
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;

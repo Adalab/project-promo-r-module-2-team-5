@@ -71,9 +71,9 @@ function hideContent (el) {
     el.classList.add('collapsed');
    }
  }
- 
- 
- 
+
+
+
  titleHeader.forEach(headerElement => {
    headerElement.addEventListener('click', () => {
      content.forEach(hideContent);
