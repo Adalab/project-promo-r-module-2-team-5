@@ -1,5 +1,4 @@
 'use strict';
-
 // PARTE DE REBECA Y MONICA
 //declarar constantes de los elementos HTMl que intervienen (nombre, borde, iconos,borde de los iconos y divs del diseña) con document.query...
 
