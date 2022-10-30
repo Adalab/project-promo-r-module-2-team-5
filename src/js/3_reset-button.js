@@ -15,8 +15,8 @@ function emptyImg () {
 }
 
 function resetRadios() {
-  const radiosReset = document.querySelector('.js_radioReset');
-  radiosReset.checked = true;
+  const defaultRadio = document.querySelector('.js_default_radio');
+  defaultRadio.checked = true;
 
 /*
   const radiosToReset = document.querySelector ('.js_radio');
