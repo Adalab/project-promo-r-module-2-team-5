@@ -17,17 +17,10 @@ function emptyImg () {
 function resetRadios() {
   const defaultRadio = document.querySelector('.js_default_radio');
   defaultRadio.checked = true;
-
-/*
-  const radiosToReset = document.querySelector ('.js_radio');
-  for (let i = 0; i < radiosToReset.length; i++) {
-    radiosToReset[i].checked = false;
-  }
-  */
 }
 
 function handleResetBtn(event) {
-  event.preventDefault;
+  event.preventDefault();
   emptyFields();
   emptyImg();
   handleInputPalette1();
