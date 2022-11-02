@@ -8,17 +8,9 @@ for (let i = 0; i < titleHeader.length; i++) {
     for (let j = 0; j < content.length; j++) {
       if (i === j) {
         content[j].classList.contains('collapsed')
-          ? content[j].classList.remove('collapsed')
-          : null;
-        !content[j].classList.contains('collapsed')
-          ? null
-          : content[j].classList.add('collapsed');
+          && content[j].classList.remove('collapsed');
         arrow[j].classList.contains('upsideDown')
-          ? arrow[j].classList.remove('upsideDown')
-          : null;
-        !arrow[j].classList.contains('upsideDown')
-          ? null
-          : arrow[j].classList.add('upsideDown');
+          && arrow[j].classList.remove('upsideDown');
       } else {
         content[j].classList.add('collapsed');
         arrow[j].classList.add('upsideDown');
