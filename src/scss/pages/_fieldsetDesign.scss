@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
   }
-  &__label {
+  &__h2title {
     width: 60%;
     color: $subtitle-color;
     font-size: rem(14);
@@ -36,8 +36,12 @@
     display: flex;
     margin-bottom: 20px;
   }
+  &__label {
+    display: none;
+  }
   &__radioBtn {
     margin-right: 10px;
+    cursor: pointer;
   }
   &__colorBox {
     height: 25px;

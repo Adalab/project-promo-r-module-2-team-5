@@ -76,13 +76,21 @@
       align-items: center;
     }
   }
+  &__box2 {
+    background-image: url(../images/astronaut.jpg);
+    background-position: center;
+    background-size: contain;
+    margin-top: 10px;
+    width: 240px;
+    height: 200px;
+  }
 }
 
 .preview__box2__pic {
-  width: 240px;
-  height: 200px;
-  object-fit: cover;
-  margin-top: 10px;
+  // width: 240px;
+  // height: 200px;
+  // object-fit: cover;
+  //margin-top: 10px;
 }
 
 .fa-trash-can {
