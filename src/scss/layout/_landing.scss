@@ -1,5 +1,5 @@
 .landing {
-  height: 85vh;
+  min-height: 85vh;
   background-color: $background-landing-color;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   align-items: center;
   border-bottom: solid 1px #d8d8d8;
   @include tablet {
-    height: 92vh;
+    min-height: 92vh;
   }
   &__logo__img {
     width: 250px;
