@@ -24,7 +24,8 @@
     padding-top: 12px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: flex-end;
   }
   &__h2title {
     width: 60%;
