@@ -15,7 +15,7 @@ const previewCard = {
 };
 const previewName = document.querySelector(".js_preview_name");
 const previewJob = document.querySelector(".js_preview_job");
-const previewImage = document.querySelector(".js_preview_image");
+const previewImage = document.querySelector(".js_preview_picture");
 const previewLinks = document.querySelectorAll(".js_preview_link");
 
 //Functions
@@ -49,9 +49,20 @@ function handleInputForm(event) {
 }
     function renderCard() {
         previewName.innerHTML = previewCard.name;
-        previewJob.innerHTML = 
-        previewImage = 
-        previewLinks 
+        previewJob.innerHTML = previewCard.job;
+        previewImage.src = previewCard.image;
+        
+        for(const link of previewLinks) {
+            if(link.id === 'phone') {
+                link.href = previewCard.phone;
+            } else if (link.id === 'email') {
+                link.href = previewCard.email;
+            } else if (link.id === 'linkedin') {
+                link.href = previewCard.linkedin;
+            } else if (link.id === 'github') {
+                link.href = previewCard.github;
+            }
+        }
     }
 
     
