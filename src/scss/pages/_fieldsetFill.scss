@@ -67,6 +67,9 @@
     flex-direction: column;
   }
   &__boxThree--2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 30px;
     height: 30px;
     border: solid 1px $palette1-color3;
