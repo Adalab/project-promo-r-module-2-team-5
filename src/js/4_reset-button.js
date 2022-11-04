@@ -9,10 +9,12 @@ function emptyFields (){
     fieldsToReset[i].value = '';
   }
 }
-//function emptyImg () {
-//  const imgToReset = document.querySelector('.js_cardPic');
-//  imgToReset.src = './assets/images/astronaut.jpg';
-//}
+function emptyImg () {
+  const imgToReset = document.querySelector('.js_cardPic');
+  imgToReset.style = 'background-image:url(./assets/images/astronaut.jpg)';
+  const imgMiniToReset = document.querySelector('.js_mini_image');
+  imgMiniToReset.style = '';
+}
 
 function resetRadios() {
   const defaultRadio = document.querySelector('.js_default_radio');
@@ -38,7 +40,7 @@ function inputPaletteDefault() {
 function handleResetBtn(event) {
   event.preventDefault();
   emptyFields();
-  //emptyImg();
+  emptyImg();
   inputPaletteDefault();
   resetRadios();
 }
