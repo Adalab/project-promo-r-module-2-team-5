@@ -78,18 +78,12 @@
   }
   &__box2 {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 10px;
     width: 240px;
     height: 200px;
   }
-}
-
-.preview__box2__pic {
-  // width: 240px;
-  // height: 200px;
-  // object-fit: cover;
-  //margin-top: 10px;
 }
 
 .fa-trash-can {
