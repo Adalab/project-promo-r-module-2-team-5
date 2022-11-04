@@ -6,15 +6,38 @@ const previewName = document.querySelector('.js_preview_name');
 const previewBorder = document.querySelector('.js_preview_box1');
 const previewIcons = document.querySelectorAll('.js_card_icon');
 const previewIconsBorder = document.querySelectorAll('.js_media_item');
-const inputPalette1 = document.querySelector('.js_input_palette1');
-const inputPalette2 = document.querySelector('.js_input_palette2');
-const inputPalette3 = document.querySelector('.js_input_palette3');
+const radioInputs = document.querySelectorAll('.js_input_palette');
+
+const paletteHandler = (e) => {
+  const paletteClicked = e.target.value;
+
+  previewName.classList.remove(`palette1-color1`,`palette2-color1`, `palette3-color1`);
+  previewName.classList.add(`palette${paletteClicked}-color1`);
+
+  previewBorder.classList.remove(`palette1-color2`,`palette2-color2`, `palette3-color2`);
+  previewBorder.classList.add(`palette${paletteClicked}-color2`);
+
+  previewIcons.forEach(icon => {
+    icon.classList.remove(`palette1-color1`,`palette2-color1`, `palette3-color1`);
+    icon.classList.add(`palette${paletteClicked}-color1`);
+  });
+
+  previewIconsBorder.forEach(iconBorder => {
+    iconBorder.classList.remove(`palette1-color3`,`palette2-color3`, `palette3-color3`);
+    iconBorder.classList.add(`palette${paletteClicked}-color3`);
+  });
+};
+
+radioInputs.forEach(input => {
+  input.addEventListener('click', paletteHandler);
+});
 
 
-/////////////////
+
+
 
 //const palettes = document.querySelectorAll ('.js_input_palette');
-const palette1 = 'palette1';
+/*const palette1 = 'palette1';
 const palette2 = 'palette2';
 const palette3 = 'palette3';
 
@@ -127,4 +150,4 @@ inputPalette3.addEventListener('change', handleInputPalette3);
 
 
 // inputPalette3.addEventListener('change', handleInputPalette3);
-
+*/
