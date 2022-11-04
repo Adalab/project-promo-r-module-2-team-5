@@ -8,3 +8,5 @@
 // const designSection = document.querySelector('.js_design_section');
 // const fillSection = document.querySelector('.js_fill_section');
 // const shareSection = document.querySelector('.js_share_section');
+
+// //inputs

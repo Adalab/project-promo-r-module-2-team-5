@@ -13,7 +13,7 @@ const previewCard = {
     gitHub: ''
 
 };
-const previewName = document.querySelector(".js_preview_name");
+//const previewName declarada en design-form
 const previewJob = document.querySelector(".js_preview_job");
 const previewImage = document.querySelector(".js_preview_picture");
 const previewLinks = document.querySelectorAll(".js_preview_link");
@@ -48,9 +48,23 @@ function handleInputForm(event) {
     renderCard();
 }
     function renderCard() {
-        previewName.innerHTML = previewCard.name;
-        previewJob.innerHTML = previewCard.job;
-        previewImage.src = previewCard.image;
+        
+        if(previewCard.name === "") {
+            previewName.innerHTML = 'Nombre Apellido';
+        } else {
+            previewName.innerHTML = previewCard.name;
+        }
+        if(previewCard.job === "") {
+            previewJob.innerHTML = 'Front-end developer';
+        } else {
+            previewJob.innerHTML = previewCard.job;
+        }
+        if(previewCard.image === "") {
+            previewImage.style = "background-image:url(./assets/images/astronaut.jpg)";
+        } else {
+            previewImage.style = previewCard.image;
+        }
+        
         
         for(const link of previewLinks) {
             if(link.id === 'phone') {
