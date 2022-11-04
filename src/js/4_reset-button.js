@@ -37,9 +37,18 @@ function inputPaletteDefault() {
       iconBorder.classList.add('palette1-color3');
     }
   }
+function resetCardText() {
+  const name = document.querySelector('.js_preview_name');
+  const job = document.querySelector('.js_preview_job');
+  name.innerHTML = "Nombre Apellido";
+  job.innerHTML = 'Front-end developer';
+  
+}
+
 function handleResetBtn(event) {
   event.preventDefault();
   emptyFields();
+  resetCardText();
   emptyImg();
   inputPaletteDefault();
   resetRadios();
