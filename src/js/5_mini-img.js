@@ -2,7 +2,7 @@
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js_image_upload_btn');
-const profileImage = document.querySelector('.js_picture_preview');
+const profileImage = document.querySelector('.js_preview_picture');
 const profilePreview = document.querySelector('.js_mini_image');
 
 
