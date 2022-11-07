@@ -51,31 +51,73 @@ function renderCard() {
   let img = '';
   let links = [];
 
-  if (previewCard.name === '') {
-    name = 'Nombre Apellido';
-  } else {
-    name = previewCard.name;
+  /*if (previewCard.name === '') {
+      name = 'Nombre Apellido';
+    } else {
+      name = previewCard.name;
+    }*/
+
+  switch (previewCard.name) {
+    case '':
+      name = 'Nombre Apellido';
+      break;
+    default:
+      name = previewCard.name;
   }
-  if (previewCard.job === '') {
-    job = 'Front-end developer';
-  } else {
-    job = previewCard.job;
+
+  /*if (previewCard.job === '') {
+      job = 'Front-end developer';
+    } else {
+      job = previewCard.job;
+      }*/
+
+  switch (previewCard.job) {
+    case '':
+      job = 'Front-end developer';
+      break;
+    default:
+      job = previewCard.job;
   }
-  if (previewCard.image === '') {
-    img = 'background-image:url(./assets/images/astronaut.jpg)';
-  } else {
-    img = previewCard.image;
+
+  /* if (previewCard.image === '') {
+      img = 'background-image:url(./assets/images/astronaut.jpg)';
+    } else {
+      img = previewCard.image;
+      }*/
+
+  switch (previewCard.image) {
+    case '':
+      img = 'background-image:url(./assets/images/astronaut.jpg)';
+      break;
+    default:
+      img = previewCard.image;
   }
 
   for (let i = 0; i < previewLinks.length; i++) {
-    if (previewLinks[i].id === 'phone') {
-      links = previewCard.phone;
+    /*if (previewLinks[i].id === 'phone') {
+      links[i] = previewCard.phone;
     } else if (previewLinks[i].id === 'email') {
-      links = previewCard.email;
+      links[i] = previewCard.email;
     } else if (previewLinks[i].id === 'linkedin') {
-      links = previewCard.linkedin;
+      links[i] = previewCard.linkedin;
     } else if (previewLinks[i].id === 'github') {
-      links = previewCard.github;
+      links[i] = previewCard.github;
+    }
+    previewLinks[i].href = links[i];*/
+
+    switch (previewLinks[i].id) {
+      case 'phone':
+        links[i] = previewCard.phone;
+        break;
+      case 'email':
+        links[i] = previewCard.email;
+        break;
+      case 'linkedin':
+        links[i] = previewCard.linkedin;
+        break;
+      case 'github':
+        links[i] = previewCard.github;
+        break;
     }
     previewLinks[i].href = links[i];
   }
