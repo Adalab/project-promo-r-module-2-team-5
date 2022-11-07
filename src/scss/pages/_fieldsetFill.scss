@@ -20,12 +20,16 @@
     padding-top: 15px;
     display: grid;
   }
+  &__keyboard {
+    font-size: rem(18);
+  }
   &__title {
     flex-grow: 1;
     text-transform: uppercase;
     font-size: rem(18);
     color: $subtitle-color;
     font-weight: 600;
+    margin-left: rem(5);
   }
   &__label {
     font-size: rem(14);
