@@ -29,58 +29,63 @@
             <div class="preview__box1 palette1-color2 js_preview_box1">
                 <p class="preview__box1__name palette1-color1 js_preview_name">Nombre
                     Apellido</p>
-                <p class="preview__box1__job js_preview_job"> Front-end developer</p>
+                <p class="preview__box1__job js_preview_job">Front-end developer</p>
             </div>
-            <div class="preview__box2">
-                <img src="./assets/images/astronaut.jpg" alt="Foto del usuario"
-                    class="preview__box2__pic js_cardPic js_preview_img">
+            <div class="preview__box2 js_preview_picture js_cardPic"
+                style="background-image:url(./assets/images/astronaut.jpg)">
             </div>
             <nav class="preview__nav">
                 <ul class="preview__media">
                     <li class="preview__media__item palette1-color3  js_media_item"><a href="#"
-                            class="preview__media__link"><i
+                            class="preview__media__link js_preview_link" id="phone"><i
                                 class="palette1-color1 js_card_icon fa-solid fa-mobile-screen-button"></i></a>
                     </li>
                     <li class="preview__media__item palette1-color3 js_media_item"><a href="#"
-                            class="preview__media__link"><i
+                            class="preview__media__link js_preview_link" id="email"><i
                                 class="palette1-color1 js_card_icon fa-regular fa-envelope"></i></a>
                     </li>
                     <li class="preview__media__item palette1-color3 js_media_item"><a href="#"
-                            class="preview__media__link"><i
+                            class="preview__media__link js_preview_link" id="linkedin"><i
                                 class="palette1-color1 js_card_icon fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li class="preview__media__item palette1-color3 js_media_item"><a href="#"
-                            class="preview__media__link"><i
+                            class="preview__media__link js_preview_link" id="github"><i
                                 class="palette1-color1 js_card_icon fa-brands fa-github-alt"></i></a>
                     </li>
                 </ul>
             </nav>
         </article>
     </section>
-    <form action="" class="form">
+    <form action="" class="form js_form">
       <fieldset class="form__design">
           <div class="form__design__boxOne js_fieldset_boxOne">
-              <legend class="form__design__title"><i class="fa-regular fa-object-ungroup form__design__ungroupIcon"></i>Diseña
-              </legend>
+              <i class="fa-regular fa-object-ungroup form__design__ungroupIcon"></i>
+              <legend class="form__design__title">Diseña</legend>
               <i class="fa-solid fa-chevron-up js_arrow"></i>
           </div>
           <section class="form__design__colors js_boxTwo">
               <label for="" class="form__design__label">Colores</label>
               <div class="form__design__rangeBox">
                   <div class="form__design__colorInput">
-                      <input type="radio" name="color" class="form__design__radioBtn js_input_palette1 js_default_radio">
+                      <label for="radio1" class="form__design__label" hidden></label>
+                      <input type="radio" name="color" value="1" checked id="radio1"
+                          class="form__design__radioBtn js_input_palette js_input_palette1 js_default_radio">
                       <div class="form__design__p1c1 form__design__colorBox"></div>
                       <div class="form__design__p1c2 form__design__colorBox"></div>
                       <div class="form__design__p1c3 form__design__colorBox"></div>
                   </div>
                   <div class="form__design__colorInput">
-                      <input type="radio" name="color" class="form__design__radioBtn js_input_palette2">
+                      <label for="radio2" class="form__design__label" hidden></label>
+                      <input type="radio" name="color" value="2" id="radio2"
+                          class="form__design__radioBtn js_input_palette js_input_palette2">
                       <div class="form__design__p2c1 form__design__colorBox"></div>
                       <div class="form__design__p2c2 form__design__colorBox"></div>
                       <div class="form__design__p2c3 form__design__colorBox"></div>
                   </div>
                   <div class="form__design__colorInput">
-                      <input type="radio" name="color" class="form__design__radioBtn js_input_palette3">
+                      <label for="radio3" class="form__design__label" hidden></label>
+                      <input type="radio" name="color" value="3" id="radio3"
+                          class="form__design__radioBtn js_input_palette js_input_palette3">
                       <div class="form__design__p3c1 form__design__colorBox"></div>
                       <div class="form__design__p3c2 form__design__colorBox"></div>
                       <div class="form__design__p3c3 form__design__colorBox"></div>
@@ -90,25 +95,25 @@
       </fieldset>
       <fieldset class="form__fill">
           <div class="form__fill__boxOne js_fieldset_boxOne">
-              <i class="fa-regular fa-keyboard"></i>
-              <legend class="form__fill__title"></i>Rellena</legend>
+              <i class="fa-regular fa-keyboard form__fill__keyboard"></i>
+              <legend class="form__fill__title">Rellena</legend>
               <i class="fa-solid fa-chevron-up js_arrow upsideDown"></i>
           </div>
           <section class="form__fill__boxTwo js_boxTwo collapsed">
-              <label class="form__fill__label js_resetabname">Nombre completo</label>
-              <input class="form__fill__input js_resetable js_input" type="text" id="fullname" name="fullname"
+              <label class="form__fill__label js_resetabname" for="fullname">Nombre completo</label>
+              <input class="form__fill__input js_resetable js_input" type="text" id="fullname" name="name"
                   placeholder="Ej: Sally hill" pattern="[A-Za-z]">
               <label class="form__fill__label" for="job">Puesto</label>
               <input class="form__fill__input short-margin js_resetable js_input" type="text" id="job" name="job"
                   placeholder="Ej: Front-end unicorn" pattern="[A-Za-z]">
-              <label class="form__fill__label" for="">Imagen de perfil</label>
+              <h2 class="form__fill__label">Imagen de perfil</h2>
               <div class="form__fill__boxThree">
                   <div class="form__fill__boxThree--1">
                       <label class="form__fill__label--cover" for="profileImage">Añadir imagen</label>
-                      <input class="form__fill__input js_input" type="file" id="profileImage" name="profileImage"
-                          accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+                      <input class="form__fill__input js_input js_image_upload_btn" type="file" id="profileImage"
+                          name="profileImage" accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
                   </div>
-                  <div class="form__fill__boxThree--2"></div>
+                  <div class="form__fill__boxThree--2 js_mini_image"></div>
               </div>
               <label class="form__fill__label" for="email">Email</label>
               <input class="form__fill__input js_resetable js_input" type="email" id="email" name="email"
@@ -117,19 +122,19 @@
               <input class="form__fill__input js_resetable js_input" type="tel" id="phone" name="phone"
                   placeholder="Ej: 555-55-55-55" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
               <label class="form__fill__label" for="linkedin-url">Linkedin</label>
-              <input class="form__fill__input js_resetable js_input" type="url" id="linkedin-url" name="linkedin-url"
+              <input class="form__fill__input js_resetable js_input" type="url" id="linkedin-url" name="linkedin"
                   placeholder="Ej: linkedin.com/in/sally.hill"
                   pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
               <label class="form__fill__label" for="github-url">Github</label>
-              <input class="form__fill__input js_resetable js_input" type="url" id="github-url" name="github-url"
+              <input class="form__fill__input js_resetable js_input" type="url" id="github-url" name="github"
                   placeholder="Ej: @sally-hill"
                   pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/">
           </section>
       </fieldset>
       <fieldset class="form__share">
           <div class="form__share__boxOne js_fieldset_boxOne">
-              <legend class="form__share__title"><i class="fa-solid fa-share-nodes form__share__nodesIcon"></i>Comparte
-              </legend>
+              <i class="fa-solid fa-share-nodes form__share__nodesIcon"></i>
+              <legend class="form__share__title">Comparte</legend>
               <i class="fa-solid fa-chevron-up js_arrow upsideDown"></i>
           </div>
           <div class="form__share__boxTwo js_boxTwo collapsed"><button class="form__share__btn"><i
