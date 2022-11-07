@@ -23,6 +23,11 @@ function handleInputForm(event) {
   const inputName = event.target.name;
   const inputValue = event.target.value;
 
+  previewCard[inputName] = inputValue; //forma rápida para rellenar el objeto
+
+  renderCard();
+
+  //Forma larga de rellenar el objeto
   /*if(inputName === 'name') {
   //Forma corta para rellenar el objeto
   previewCard[inputName] = inputValue;
@@ -44,39 +49,6 @@ function handleInputForm(event) {
     } else if (inputName === 'gitHub') {
         previewCard.gitHub = inputValue;
     } */ //forma larga
-
-  previewCard[inputName] = inputValue; //forma rápida //para rellenar el objeto
-
-  renderCard();
-}
-function renderCard() {
-  if (previewCard.name === '') {
-    previewName.innerHTML = 'Nombre Apellido';
-  } else {
-    previewName.innerHTML = previewCard.name;
-  }
-  if (previewCard.job === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  } else {
-    previewJob.innerHTML = previewCard.job;
-  }
-  if (previewCard.image === '') {
-    previewImage.style = 'background-image:url(./assets/images/astronaut.jpg)';
-  } else {
-    previewImage.style = previewCard.image;
-  }
-
-  for (const link of previewLinks) {
-    if (link.id === 'phone') {
-      link.href = previewCard.phone;
-    } else if (link.id === 'email') {
-      link.href = previewCard.email;
-    } else if (link.id === 'linkedin') {
-      link.href = previewCard.linkedin;
-    } else if (link.id === 'github') {
-      link.href = previewCard.github;
-    }
-  }
 }
 
 function renderCard() {
@@ -163,3 +135,33 @@ function renderCard() {
 
 //Events
 form.addEventListener('input', handleInputForm);
+
+// function renderCard() {
+//   if (previewCard.name === '') {
+//     previewName.innerHTML = 'Nombre Apellido';
+//   } else {
+//     previewName.innerHTML = previewCard.name;
+//   }
+//   if (previewCard.job === '') {
+//     previewJob.innerHTML = 'Front-end developer';
+//   } else {
+//     previewJob.innerHTML = previewCard.job;
+//   }
+//   if (previewCard.image === '') {
+//     previewImage.style = 'background-image:url(./assets/images/astronaut.jpg)';
+//   } else {
+//     previewImage.style = previewCard.image;
+//   }
+
+//   for (const link of previewLinks) {
+//     if (link.id === 'phone') {
+//       link.href = previewCard.phone;
+//     } else if (link.id === 'email') {
+//       link.href = previewCard.email;
+//     } else if (link.id === 'linkedin') {
+//       link.href = previewCard.linkedin;
+//     } else if (link.id === 'github') {
+//       link.href = previewCard.github;
+//     }
+//   }
+// }
