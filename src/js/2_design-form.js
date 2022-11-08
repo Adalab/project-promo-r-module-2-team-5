@@ -10,6 +10,7 @@ const radioInputs = document.querySelectorAll('.js_input_palette');
 
 const paletteHandler = (e) => {
   const paletteClicked = e.target.value;
+  previewCard.palette = paletteClicked;
 
   previewName.classList.remove(`palette1-color1`,`palette2-color1`, `palette3-color1`);
   previewName.classList.add(`palette${paletteClicked}-color1`);

@@ -31,6 +31,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  previewCard.photo = fr.result;
 }
 
 /**

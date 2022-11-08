@@ -7,11 +7,11 @@ const previewJob = document.querySelector('.js_preview_job');
 const previewImage = document.querySelector('.js_preview_picture');
 const previewLinks = document.querySelectorAll('.js_preview_link');
 
-const previewCard = {
+let previewCard = {
   palette: '',
   name: '',
   job: '',
-  image: '',
+  photo: '',
   email: '',
   phone: '',
   linkedin: '',
@@ -54,7 +54,7 @@ function handleInputForm(event) {
 function renderCard() {
   let name = '';
   let job = '';
-  let img = '';
+  // let img = '';
   let links = [];
 
   /*if (previewCard.name === '') {
@@ -91,13 +91,13 @@ function renderCard() {
       img = previewCard.image;
       }*/
 
-  switch (previewCard.image) {
-    case '':
-      img = 'background-image:url(./assets/images/astronaut.jpg)';
-      break;
-    default:
-      img = previewCard.image;
-  }
+  // switch (previewCard.photo) {
+  //   case '':
+  //     img = './assets/images/astronaut.jpg';
+  //     break;
+  //   default:
+  //     img = previewCard.photo;
+  // }
 
   for (let i = 0; i < previewLinks.length; i++) {
     /*if (previewLinks[i].id === 'phone') {
@@ -130,7 +130,7 @@ function renderCard() {
 
   previewName.innerHTML = name;
   previewJob.innerHTML = job;
-  previewImage.style = img;
+  // previewImage.style = `background-img: url('${img}')`;
 }
 
 //Events
