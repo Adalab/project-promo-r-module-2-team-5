@@ -6,7 +6,7 @@ const content = document.querySelectorAll('.js_boxTwo');
 for (let i = 0; i < titleHeader.length; i++) {
   titleHeader[i].addEventListener('click', () => {
     for (let j = 0; j < content.length; j++) {
-      if (i === j) {
+      if (i === j) { //aquí se comprueba si el índice de los títulos (i) coincide con el índice de los contenidos. Si el índice del título coincide con el del contenido, entonces se mostrará el contenido. Si no coinciden los índices, el contenido se esconde.  
         content[j].classList.contains('collapsed')
           && content[j].classList.remove('collapsed');
         arrow[j].classList.contains('upsideDown')
