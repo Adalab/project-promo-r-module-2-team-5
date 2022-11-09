@@ -7,11 +7,11 @@ const previewJob = document.querySelector('.js_preview_job');
 const previewImage = document.querySelector('.js_preview_picture');
 const previewLinks = document.querySelectorAll('.js_preview_link');
 
-const previewCard = {
+let previewCard = {
   palette: '',
   name: '',
   job: '',
-  image: '',
+  photo: '',
   email: '',
   phone: '',
   linkedin: '',
@@ -25,6 +25,11 @@ function handleInputForm(event) {
   const inputName = event.target.name;
   const inputValue = event.target.value;
 
+  previewCard[inputName] = inputValue; //forma rápida para rellenar el objeto
+
+  renderCard();
+
+  //Forma larga de rellenar el objeto
   /*if(inputName === 'name') {
   //Forma corta para rellenar el objeto
   previewCard[inputName] = inputValue;
@@ -46,45 +51,12 @@ function handleInputForm(event) {
     } else if (inputName === 'gitHub') {
         previewCard.gitHub = inputValue;
     } */ //forma larga
-
-  previewCard[inputName] = inputValue; //forma rápida //para rellenar el objeto
-
-  renderCard();
-}
-function renderCard() {
-  if (previewCard.name === '') {
-    previewName.innerHTML = 'Nombre Apellido';
-  } else {
-    previewName.innerHTML = previewCard.name;
-  }
-  if (previewCard.job === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  } else {
-    previewJob.innerHTML = previewCard.job;
-  }
-  if (previewCard.image === '') {
-    previewImage.style = 'background-image:url(./assets/images/astronaut.jpg)';
-  } else {
-    previewImage.style = previewCard.image;
-  }
-
-  for (const link of previewLinks) {
-    if (link.id === 'phone') {
-      link.href = previewCard.phone;
-    } else if (link.id === 'email') {
-      link.href = previewCard.email;
-    } else if (link.id === 'linkedin') {
-      link.href = previewCard.linkedin;
-    } else if (link.id === 'github') {
-      link.href = previewCard.github;
-    }
-  }
 }
 
 function renderCard() {
   let name = '';
   let job = '';
-  let img = '';
+  // let img = '';
   let links = [];
 
   /*if (previewCard.name === '') {
@@ -121,13 +93,13 @@ function renderCard() {
       img = previewCard.image;
       }*/
 
-  switch (previewCard.image) {
-    case '':
-      img = 'background-image:url(./assets/images/astronaut.jpg)';
-      break;
-    default:
-      img = previewCard.image;
-  }
+  // switch (previewCard.photo) {
+  //   case '':
+  //     img = './assets/images/astronaut.jpg';
+  //     break;
+  //   default:
+  //     img = previewCard.photo;
+  // }
 
   for (let i = 0; i < previewLinks.length; i++) {
     /*if (previewLinks[i].id === 'phone') {
@@ -160,8 +132,38 @@ function renderCard() {
 
   previewName.innerHTML = name;
   previewJob.innerHTML = job;
-  previewImage.style = img;
+  // previewImage.style = `background-img: url('${img}')`;
 }
 
 //Events
 form.addEventListener('input', handleInputForm);
+
+// function renderCard() {
+//   if (previewCard.name === '') {
+//     previewName.innerHTML = 'Nombre Apellido';
+//   } else {
+//     previewName.innerHTML = previewCard.name;
+//   }
+//   if (previewCard.job === '') {
+//     previewJob.innerHTML = 'Front-end developer';
+//   } else {
+//     previewJob.innerHTML = previewCard.job;
+//   }
+//   if (previewCard.image === '') {
+//     previewImage.style = 'background-image:url(./assets/images/astronaut.jpg)';
+//   } else {
+//     previewImage.style = previewCard.image;
+//   }
+
+//   for (const link of previewLinks) {
+//     if (link.id === 'phone') {
+//       link.href = previewCard.phone;
+//     } else if (link.id === 'email') {
+//       link.href = previewCard.email;
+//     } else if (link.id === 'linkedin') {
+//       link.href = previewCard.linkedin;
+//     } else if (link.id === 'github') {
+//       link.href = previewCard.github;
+//     }
+//   }
+// }
