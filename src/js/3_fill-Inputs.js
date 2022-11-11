@@ -1,11 +1,11 @@
-
-
 //Elementos HTML del DOM
 const form = document.querySelector('.js_form');
 /*const previewName ya declarada en design-form*/
 const previewJob = document.querySelector('.js_preview_job');
 const previewImage = document.querySelector('.js_preview_picture');
 const previewLinks = document.querySelectorAll('.js_preview_link');
+const defaultName = 'Nombre Apellido';
+const defaultJob = 'Front-end developer';
 
 let previewCard = {
   palette: '',
@@ -17,8 +17,6 @@ let previewCard = {
   linkedin: '',
   github: '',
 };
-
-
 
 //Functions
 function handleInputForm(event) {
@@ -67,7 +65,7 @@ function renderCard() {
 
   switch (previewCard.name) {
     case '':
-      name = 'Nombre Apellido';
+      name = defaultName;
       break;
     default:
       name = previewCard.name;
@@ -81,7 +79,7 @@ function renderCard() {
 
   switch (previewCard.job) {
     case '':
-      job = 'Front-end developer';
+      job = defaultJob;
       break;
     default:
       job = previewCard.job;
