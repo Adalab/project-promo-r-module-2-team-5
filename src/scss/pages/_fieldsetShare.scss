@@ -86,6 +86,10 @@
   }
   &__cardLink {
     color: $primary-color;
+    font-size: rem(12);
+    width: 292px;
+    height: 17px;
+    margin: 5px 10px 10px 1px;
   }
   &__shareBtn {
     background-color: $twitter-color;
