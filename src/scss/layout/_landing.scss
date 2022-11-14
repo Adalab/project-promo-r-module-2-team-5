@@ -1,6 +1,7 @@
 .landing {
   min-height: 85vh;
-  background-color: $background-landing-color;
+  //background-color: $background-landing-color;
+  background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
