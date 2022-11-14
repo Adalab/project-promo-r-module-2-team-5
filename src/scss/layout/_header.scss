@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  background-image: linear-gradient(to right bottom, #dc78b7, #6c54c3);
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 0;
@@ -8,9 +9,12 @@
   &__link {
     width: 201px;
     height: 50px;
-    margin-left: 31px;
+    padding-left: 31px;
   }
   &__link__logo {
-    width: 100%;
+    width: 110px;
+    height: 70px;
+    position: relative;
+    bottom: 20%;
   }
 }

@@ -1,5 +1,5 @@
 .form__design {
-  border-bottom: #d8d8d8 1px solid;
+  border-bottom: rgba(197, 84, 180, 0.4) 1px solid;
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 30px;
@@ -14,7 +14,7 @@
     flex-grow: 1;
     text-transform: uppercase;
     font-size: rem(18);
-    color: $subtitle-color;
+    color: rgb(160, 30, 140);
     font-weight: 600;
   }
   &__ungroupIcon {
@@ -41,7 +41,7 @@
     font-size: rem(14);
     width: 62px;
     height: 19px;
-    color: $subtitle-color;
+    color: rgb(197, 84, 180);
     margin-left: 20px;
     text-transform: uppercase;
   }
@@ -87,4 +87,31 @@
 }
 .collapsed {
   display: none;
+}
+
+.fa-keyboard {
+  color: rgb(219, 145, 208);
+  font-size: rem(18);
+  @include tablet {
+    font-size: rem(18);
+  }
+}
+
+.fa-object-ungroup {
+  color: rgb(219, 145, 208);
+  font-size: rem(18);
+  @include tablet {
+    font-size: rem(18);
+  }
+}
+
+.fa-share-nodes {
+  color: rgb(219, 145, 208);
+  font-size: rem(18);
+  @include tablet {
+    font-size: rem(18);
+  }
+}
+.fa-chevron-up {
+  color: rgb(197, 84, 180);
 }

@@ -1,6 +1,5 @@
 //Elementos HTML del DOM
 const form = document.querySelector('.js_form');
-/*const previewName ya declarada en design-form*/
 const previewJob = document.querySelector('.js_preview_job');
 const previewImage = document.querySelector('.js_preview_picture');
 const previewLinks = document.querySelectorAll('.js_preview_link');
