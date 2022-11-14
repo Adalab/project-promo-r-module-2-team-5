@@ -2,14 +2,14 @@
 @import 'core/variables';
 @import 'core/rems';
 @import 'core/mixins';
-// @import 'components/code';
 @import 'components/iconFeatures';
+@import 'components/stars';
 @import 'layout/page';
 @import 'layout/landing';
 @import 'layout/header';
 @import 'layout/form';
 @import 'layout/footer';
-@import 'pages/index';
+@import 'components/stars';
 @import 'pages/fieldsetDesign';
 @import 'pages/fieldsetFill';
 @import 'pages/fieldsetShare';

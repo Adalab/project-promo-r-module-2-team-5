@@ -19,41 +19,41 @@
   }
 }
 
-.stars,
-.twinkling,
-.clouds {
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+// .stars,
+// .twinkling,
+// .clouds {
+//   position: absolute;
+//   display: block;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   width: 100%;
+//   height: 100%;
+// }
 
-.space {
-  z-index: 0;
-  background-image: linear-gradient(to right bottom, #dc78b7, #6c54c3);
-  background: rgb(0, 0, 0) url('https://i.imgur.com/YKY28eT.png') repeat top
-    center;
-}
+// .space {
+//   z-index: 0;
+//   background-image: linear-gradient(to right bottom, #dc78b7, #6c54c3);
+//   background: rgb(0, 0, 0) url('https://i.imgur.com/YKY28eT.png') repeat top
+//     center;
+// }
 
-.twinkling {
-  background: transparent url('https://i.imgur.com/XYMF4ca.png') repeat top
-    center;
-  width: 85%;
-  height: 10vh;
-  position: relative;
-  left: 0.1%;
-  animation: move-twink-back 200s linear infinite;
-}
+// .twinkling {
+//   background: transparent url('https://i.imgur.com/XYMF4ca.png') repeat top
+//     center;
+//   width: 85%;
+//   height: 10vh;
+//   position: relative;
+//   left: 0.1%;
+//   animation: move-twink-back 200s linear infinite;
+// }
 
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
+// @keyframes move-twink-back {
+//   from {
+//     background-position: 0 0;
+//   }
+//   to {
+//     background-position: -10000px 5000px;
+//   }
+// }
