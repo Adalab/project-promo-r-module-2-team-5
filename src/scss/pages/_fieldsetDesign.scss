@@ -1,5 +1,5 @@
 .form__design {
-  border-bottom: rgba(197, 84, 180, 0.4) 1px solid;
+  border-bottom: rgb(197, 84, 180) 1px solid;
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 30px;
@@ -47,6 +47,7 @@
   }
   &__radioBtn {
     margin-right: 10px;
+    accent-color: rgb(197, 84, 180);
     cursor: pointer;
   }
   &__colorBox {
@@ -89,7 +90,7 @@
   display: none;
 }
 
-.fa-keyboard {
+.keyboard_fill {
   color: rgb(219, 145, 208);
   font-size: rem(18);
   @include tablet {
@@ -97,7 +98,7 @@
   }
 }
 
-.fa-object-ungroup {
+.ungroup_design {
   color: rgb(219, 145, 208);
   font-size: rem(18);
   @include tablet {
@@ -105,7 +106,7 @@
   }
 }
 
-.fa-share-nodes {
+.nodes_share {
   color: rgb(219, 145, 208);
   font-size: rem(18);
   @include tablet {

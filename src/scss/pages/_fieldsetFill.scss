@@ -2,7 +2,7 @@
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 10px;
-  border-bottom: rgba(197, 84, 180, 0.4) 1px solid;
+  border-bottom: rgb(197, 84, 180) 1px solid;
   display: grid;
   @include tablet {
     margin-left: 40px;
@@ -76,7 +76,7 @@
     background-size: cover;
     width: 30px;
     height: 30px;
-    border: solid 1px $palette1-color3;
+    border: solid 1px rgb(197, 84, 180);
   }
 }
 .short-margin {

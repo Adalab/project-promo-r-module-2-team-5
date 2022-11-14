@@ -7,7 +7,7 @@ const defaultName = 'Nombre Apellido';
 const defaultJob = 'Front-end developer';
 
 let previewCard = {
-  palette: '',
+  palette: '1',
   name: '',
   job: '',
   photo: '',
