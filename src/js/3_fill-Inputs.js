@@ -1,4 +1,4 @@
-'use strict'; //descomentarlo al final
+
 
 //Elementos HTML del DOM
 const form = document.querySelector('.js_form');
@@ -17,6 +17,8 @@ let previewCard = {
   linkedin: '',
   github: '',
 };
+
+
 
 //Functions
 function handleInputForm(event) {
