@@ -68,7 +68,7 @@
               <div class="form__design__rangeBox">
                   <div class="form__design__colorInput">
                       <label for="radio1" class="form__design__label" hidden></label>
-                      <input type="radio" name="color" value="1" checked id="radio1"
+                      <input type="radio" name="palette" value="1" checked id="radio1"
                           class="form__design__radioBtn js_input_palette js_input_palette1 js_default_radio">
                       <div class="form__design__p1c1 form__design__colorBox"></div>
                       <div class="form__design__p1c2 form__design__colorBox"></div>
@@ -76,7 +76,7 @@
                   </div>
                   <div class="form__design__colorInput">
                       <label for="radio2" class="form__design__label" hidden></label>
-                      <input type="radio" name="color" value="2" id="radio2"
+                      <input type="radio" name="palette" value="2" id="radio2"
                           class="form__design__radioBtn js_input_palette js_input_palette2">
                       <div class="form__design__p2c1 form__design__colorBox"></div>
                       <div class="form__design__p2c2 form__design__colorBox"></div>
@@ -84,7 +84,7 @@
                   </div>
                   <div class="form__design__colorInput">
                       <label for="radio3" class="form__design__label" hidden></label>
-                      <input type="radio" name="color" value="3" id="radio3"
+                      <input type="radio" name="palette" value="3" id="radio3"
                           class="form__design__radioBtn js_input_palette js_input_palette3">
                       <div class="form__design__p3c1 form__design__colorBox"></div>
                       <div class="form__design__p3c2 form__design__colorBox"></div>
@@ -110,8 +110,8 @@
               <div class="form__fill__boxThree">
                   <div class="form__fill__boxThree--1">
                       <label class="form__fill__label--cover" for="photo">Añadir imagen</label>
-                      <input class="form__fill__input js_input js_image_upload_btn" type="file" id="photo"
-                          name="photo" accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
+                      <input class="form__fill__input js_input js_image_upload_btn" type="file" id="photo" name="photo"
+                          accept=".png, .svg, .webp, .jpg, .jpeg, .jfif, .pjpeg, .pjp" hidden>
                   </div>
                   <div class="form__fill__boxThree--2 js_mini_image"></div>
               </div>
@@ -137,18 +137,18 @@
               <legend class="form__share__title">Comparte</legend>
               <i class="fa-solid fa-chevron-up js_arrow upsideDown"></i>
           </div>
-          <div class="form__share__boxTwo js_boxTwo collapsed"><button class="form__share__btn"><i
-                      class="fa-regular fa-address-card form__share__cardIcon"></i>Crear tarjeta</button></div>
+          <div class="form__share__boxTwo js_boxTwo js_share_box2 collapsed">
+              <button class="form__share__btn js_share_btn"><i
+                      class="fa-regular fa-address-card form__share__cardIcon"></i>Crear tarjeta</button>
+          </div>
       </fieldset>
       <section class="form__collapsible js_share_section collapsed">
-          <div class="form__collapsible__boxText">
-              <p class="form__collapsible__cardText">
-                  La tarjeta ha sido creada:
-              </p>
-              <a class="form__collapsible__cardLink">link aquí</a>
+          <div class="form__collapsible__boxText js_box_share_card">
+
           </div>
-          <p class="form__collapsible__errorText">Ups! Debes rellenar todos los campos obligatorios!</p>
-          <a href="#" class="form__collapsible__shareBtn"><i class="fa-brands fa-twitter"></i><span>Compartir en
+
+          <a href="#" class="form__collapsible__shareBtn js_twitter_btn"><i class="fa-brands fa-twitter"></i><span>Compartir
+                  en
                   twitter</span></a>
       </section>
     </form>
