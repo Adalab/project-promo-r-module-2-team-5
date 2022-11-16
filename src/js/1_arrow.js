@@ -1,16 +1,13 @@
 // eslint-disable-next-line strict
-const titleHeader = document.querySelectorAll('.js_fieldset_boxOne');
-const arrow = document.querySelectorAll('.js_arrow');
-const content = document.querySelectorAll('.js_boxTwo');
 
 for (let i = 0; i < titleHeader.length; i++) {
   titleHeader[i].addEventListener('click', () => {
     for (let j = 0; j < content.length; j++) {
       if (i === j) {
-        content[j].classList.contains('collapsed')
-          && content[j].classList.remove('collapsed');
-        arrow[j].classList.contains('upsideDown')
-          && arrow[j].classList.remove('upsideDown');
+        content[j].classList.contains('collapsed') &&
+          content[j].classList.remove('collapsed');
+        arrow[j].classList.contains('upsideDown') &&
+          arrow[j].classList.remove('upsideDown');
       } else {
         content[j].classList.add('collapsed');
         arrow[j].classList.add('upsideDown');

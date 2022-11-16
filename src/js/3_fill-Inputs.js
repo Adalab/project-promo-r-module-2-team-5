@@ -1,11 +1,3 @@
-//Elementos HTML del DOM
-const form = document.querySelector('.js_form');
-const previewJob = document.querySelector('.js_preview_job');
-const previewImage = document.querySelector('.js_preview_picture');
-const previewLinks = document.querySelectorAll('.js_preview_link');
-const defaultName = 'Nombre Apellido';
-const defaultJob = 'Front-end developer';
-
 let previewCard = {
   palette: '1',
   name: '',
