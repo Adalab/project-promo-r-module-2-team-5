@@ -1,6 +1,5 @@
 .landing {
   min-height: 85vh;
-  //background-color: $background-landing-color;
   background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
   display: flex;
   flex-direction: column;
@@ -12,16 +11,14 @@
   }
   &__logo__img {
     width: 250px;
-    height: 170px;
-    // margin: 95px 35px 35.4px 35px;
+    height: 130px;
     @media all and (min-width: 768px) {
-      width: 460px;
-      height: 310px;
-      /* margin: 350px 174px 31px 174px;*/
+      width: 430px;
+      height: 220px;
     }
   }
   &__title {
-    color: rgb(251, 200, 243);
+    color: white;
     font-family: $font-title;
     font-weight: bold;
     font-size: rem(19.2);
@@ -33,7 +30,7 @@
     }
   }
   &__text {
-    color: rgb(236, 156, 249);
+    color: rgb(251, 200, 243);
     font-family: $font-main;
     font-size: rem(12.8);
     font-weight: 600;
@@ -74,7 +71,7 @@
       gap: 5px;
       padding: 10px;
       &__text {
-        color: rgb(236, 156, 249);
+        color: rgb(251, 200, 243);
         font-size: rem(13);
         text-align: center;
         @include tablet {
@@ -108,7 +105,7 @@
 }
 
 .keyboard_landing {
-  color: rgb(251, 200, 243);
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);
@@ -116,7 +113,7 @@
 }
 
 .ungroup_landing {
-  color: rgb(251, 200, 243);
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);
@@ -124,7 +121,7 @@
 }
 
 .nodes_landing {
-  color: rgb(251, 200, 243);
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);
