@@ -1,5 +1,3 @@
-// eslint-disable-next-line strict
-
 for (let i = 0; i < titleHeader.length; i++) {
   titleHeader[i].addEventListener('click', () => {
     for (let j = 0; j < content.length; j++) {
@@ -15,57 +13,3 @@ for (let i = 0; i < titleHeader.length; i++) {
     }
   });
 }
-/*https://softauthor.com/accordion-menu-in-vanilla-javascript/*/
-
-// ESTO FUNCIONA
-/*for (let i = 0; i < titleHeader.length; i++) {
-   titleHeader[i].addEventListener('click', () => {
-      if(content[i].classList.contains('collapsed')) {
-         content[i].classList.remove('collapsed');
-      } 
-      if() {
-         content[i].classList.add('collapsed');
-      }
-   })
-}
-*/
-/*LO MISMO PERO CON TERNARY OPERATOR
-for (let i = 0; i < titleHeader.length; i++) {
-   titleHeader[i].addEventListener('click', () => {
-      content[i].classList.contains('collapsed') ? content[i].classList.remove('collapsed') : content[i].classList.add('collapsed');
-   })
-}
-*/
-
-/*FRACASO 1 */
-/*titleHeader.forEach(headerElement => {
-   console.log(headerElement);
-   headerElement.addEventListener('click', () => {
-      if(headerElement.classList.contains('collapsed')) {
-      headerElement.classList.remove('collapsed');
-   } else {
-      titleHeader.forEach(headerEl => {
-         headerEl.classList.remove('collapsed');
-      })
-      headerElement.classList.toggle('collapsed');
-   })
-})*/
-
-/*FRACASO 2 */
-/*
-function hideContent (el) {
-   if(el.classList.contains('collapsed')) {
-     el.classList.remove('collapsed');
-   } else {
-    el.classList.add('collapsed');
-   }
- }
-
-
-
- titleHeader.forEach(headerElement => {
-   headerElement.addEventListener('click', () => {
-     content.forEach(hideContent);
-   });
- });
-*/

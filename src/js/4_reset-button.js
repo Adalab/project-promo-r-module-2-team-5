@@ -55,12 +55,6 @@ function resetObject() {
     linkedin: '',
     github: '',
   };
-  // let objectValues = Object.values(previewCard);
-  // console.log(objectValues);
-  // for (const key in previewCard) {
-  //   console.log(key);
-  //   previewCard.key = '';
-  // }
 }
 
 function handleResetBtn(event) {
