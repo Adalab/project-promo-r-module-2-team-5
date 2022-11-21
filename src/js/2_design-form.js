@@ -1,41 +1,43 @@
-'use strict';
-// PARTE DE REBECA Y MONICA
-//declarar constantes de los elementos HTMl que intervienen (nombre, borde, iconos,borde de los iconos y divs del diseña) con document.query...
-
-const previewName = document.querySelector('.js_preview_name');
-const previewBorder = document.querySelector('.js_preview_box1');
-const previewIcons = document.querySelectorAll('.js_card_icon');
-const previewIconsBorder = document.querySelectorAll('.js_media_item');
-const radioInputs = document.querySelectorAll('.js_input_palette');
-
 const paletteHandler = (e) => {
   const paletteClicked = e.target.value;
   previewCard.palette = paletteClicked;
 
-  previewName.classList.remove(`palette1-color1`,`palette2-color1`, `palette3-color1`);
+  previewName.classList.remove(
+    `palette1-color1`,
+    `palette2-color1`,
+    `palette3-color1`
+  );
   previewName.classList.add(`palette${paletteClicked}-color1`);
 
-  previewBorder.classList.remove(`palette1-color2`,`palette2-color2`, `palette3-color2`);
+  previewBorder.classList.remove(
+    `palette1-color2`,
+    `palette2-color2`,
+    `palette3-color2`
+  );
   previewBorder.classList.add(`palette${paletteClicked}-color2`);
 
-  previewIcons.forEach(icon => {
-    icon.classList.remove(`palette1-color1`,`palette2-color1`, `palette3-color1`);
+  previewIcons.forEach((icon) => {
+    icon.classList.remove(
+      `palette1-color1`,
+      `palette2-color1`,
+      `palette3-color1`
+    );
     icon.classList.add(`palette${paletteClicked}-color1`);
   });
 
-  previewIconsBorder.forEach(iconBorder => {
-    iconBorder.classList.remove(`palette1-color3`,`palette2-color3`, `palette3-color3`);
+  previewIconsBorder.forEach((iconBorder) => {
+    iconBorder.classList.remove(
+      `palette1-color3`,
+      `palette2-color3`,
+      `palette3-color3`
+    );
     iconBorder.classList.add(`palette${paletteClicked}-color3`);
   });
 };
 
-radioInputs.forEach(input => {
+radioInputs.forEach((input) => {
   input.addEventListener('click', paletteHandler);
 });
-
-
-
-
 
 //const palettes = document.querySelectorAll ('.js_input_palette');
 /*const palette1 = 'palette1';

@@ -1,8 +1,3 @@
-'use strict';
-// Monica Boton de reset
-
-const cardResetBtn = document.querySelector('.js_card_reset_btn');
-
 function emptyFields() {
   const fieldsToReset = document.querySelectorAll('.js_resetable');
   for (let i = 0; i < fieldsToReset.length; i++) {
@@ -11,7 +6,7 @@ function emptyFields() {
 }
 function emptyImg() {
   const imgToReset = document.querySelector('.js_cardPic');
-  imgToReset.style = 'background-image:url(./assets/images/astronaut.jpg)';
+  imgToReset.style = 'background-image:url(./assets/images/default_image.jpg)';
   const imgMiniToReset = document.querySelector('.js_mini_image');
   imgMiniToReset.style = '';
 }
@@ -44,9 +39,14 @@ function resetCardText() {
   job.innerHTML = 'Front-end developer';
 }
 
+function closeSection() {
+  shareCard.classList.add('collapsed');
+  console.log(shareCard);
+}
+
 function resetObject() {
   previewCard = {
-    palette: '',
+    palette: '1',
     name: '',
     job: '',
     photo: '',
@@ -55,7 +55,6 @@ function resetObject() {
     linkedin: '',
     github: '',
   };
-
   // let objectValues = Object.values(previewCard);
   // console.log(objectValues);
   // for (const key in previewCard) {
@@ -72,6 +71,7 @@ function handleResetBtn(event) {
   emptyImg();
   inputPaletteDefault();
   resetRadios();
+  closeSection();
 }
 
 cardResetBtn.addEventListener('click', handleResetBtn);

@@ -1,6 +1,6 @@
 .landing {
   min-height: 85vh;
-  background-color: $background-landing-color;
+  background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,16 +11,14 @@
   }
   &__logo__img {
     width: 250px;
-    height: 63px;
-    margin: 95px 35px 35.4px 35px;
+    height: 130px;
     @media all and (min-width: 768px) {
-      width: 419px;
-      height: 105px;
-      /* margin: 350px 174px 31px 174px;*/
+      width: 430px;
+      height: 220px;
     }
   }
   &__title {
-    color: $primary-color;
+    color: white;
     font-family: $font-title;
     font-weight: bold;
     font-size: rem(19.2);
@@ -32,7 +30,7 @@
     }
   }
   &__text {
-    color: $palette1-color1;
+    color: rgb(251, 200, 243);
     font-family: $font-main;
     font-size: rem(12.8);
     font-weight: 600;
@@ -53,7 +51,7 @@
     align-items: center;
     position: relative;
     width: 268px;
-    border: solid 1.6px rgba($primary-color, $alpha: 0.21);
+    border: solid 1.6px rgb(251, 200, 243);
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 38.6px;
@@ -73,8 +71,8 @@
       gap: 5px;
       padding: 10px;
       &__text {
+        color: rgb(251, 200, 243);
         font-size: rem(13);
-        color: $subtitle-color;
         text-align: center;
         @include tablet {
           font-size: rem(16);
@@ -88,9 +86,9 @@
     padding: 13px;
     width: 129px;
     height: 42px;
-    color: #ffffff;
+    color: rgb(132, 42, 119);
     font-family: $font-main;
-    background-color: $palette1-color2;
+    background-color: rgb(251, 200, 243);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -106,21 +104,24 @@
   }
 }
 
-.fa-keyboard {
+.keyboard_landing {
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);
   }
 }
 
-.fa-object-ungroup {
+.ungroup_landing {
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);
   }
 }
 
-.fa-share-nodes {
+.nodes_landing {
+  color: white;
   font-size: rem(22.4);
   @include tablet {
     font-size: rem(28);

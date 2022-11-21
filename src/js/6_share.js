@@ -1,8 +1,3 @@
-'use strict';
-const shareBtn = document.querySelector('.js_share_btn');
-
-//const previewCardLS = JSON.parse(localStorage.getItem(previewCard));
-
 function createLinkSection(responseJson) {
   const boxShareCard = document.querySelector('.js_box_share_card');
   const text = document.createElement('p');
@@ -31,7 +26,6 @@ function sendCard(e) {
     .then((response) => response.json())
     .then((responseJson) => {
       if (responseJson.success) {
-        const shareCard = document.querySelector('.js_share_section');
         const errorTextEl = document.querySelector(
           '.form__collapsible__errorText'
         );

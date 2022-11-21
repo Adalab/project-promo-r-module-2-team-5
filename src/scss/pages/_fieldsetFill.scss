@@ -2,7 +2,7 @@
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 10px;
-  border-bottom: #d8d8d8 1px solid;
+  border-bottom: rgb(197, 84, 180) 1px solid;
   display: grid;
   @include tablet {
     margin-left: 40px;
@@ -27,13 +27,13 @@
     flex-grow: 1;
     text-transform: uppercase;
     font-size: rem(18);
-    color: $subtitle-color;
+    color: rgb(160, 30, 140);
     font-weight: 600;
     margin-left: rem(5);
   }
   &__label {
     font-size: rem(14);
-    color: $palette1-color1;
+    color: rgb(138, 25, 121);
     font-weight: 600;
     margin-bottom: rem(7);
     line-height: 1.43;
@@ -45,13 +45,13 @@
       font-weight: 400;
       line-height: 1.8;
       text-align: center;
-      background-color: $primary-color;
+      background-color: rgb(160, 30, 140);
       border-radius: 3px;
       cursor: pointer;
     }
   }
   &__input {
-    border: $palette1-color3 solid 1px;
+    border: rgba(138, 25, 121, 0.5) solid 1px;
     font-size: rem(14);
     color: black;
     font-family: $font-main;
@@ -76,7 +76,7 @@
     background-size: cover;
     width: 30px;
     height: 30px;
-    border: solid 1px $palette1-color3;
+    border: solid 1px rgb(197, 84, 180);
   }
 }
 .short-margin {

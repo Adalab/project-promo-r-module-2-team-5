@@ -1,9 +1,5 @@
 .preview {
-  background: linear-gradient(
-    to bottom,
-    $background-preview-color1,
-    $background-preview-color2
-  );
+  background-image: linear-gradient(to right bottom, #dc78b7, #6c54c3);
   padding-top: 35px;
   padding-bottom: 40px;
   display: flex;
@@ -20,12 +16,12 @@
   }
 
   &__btn {
-    border: solid 1px #ffffff;
+    border: solid 2px rgb(248, 219, 244);
     border-radius: 15px;
     width: 75px;
     height: 30px;
     background-color: transparent;
-    color: $subtitle-color;
+    color: rgb(251, 240, 251);
     font-size: rem(12);
     text-transform: uppercase;
     padding: 6px 12px 5px 12px;

@@ -1,5 +1,5 @@
 .form__share {
-  border-bottom: #d8d8d8 1px solid;
+  border-bottom: rgb(197, 84, 180) 1px solid;
   margin-right: 19px;
   margin-left: 20px;
   margin-top: 10px;
@@ -17,7 +17,7 @@
   }
   &__title {
     flex-grow: 1;
-    color: #54585a;
+    color: rgb(160, 30, 140);
     font-family: $font-main;
     font-size: rem(18);
     font-weight: 600;
@@ -38,7 +38,7 @@
     padding: 20px 0 30px;
   }
   &__btn {
-    background-color: $primary-color;
+    background-color: rgb(160, 30, 140);
     border-radius: 12px;
     border-style: none;
     color: #ffffff;
@@ -50,7 +50,7 @@
     cursor: pointer;
   }
   &__btn:disabled {
-    background-color: #d5d5d5;
+    background-color: rgb(169, 144, 165);
   }
   &__cardIcon {
     padding-right: 10px;
@@ -75,9 +75,10 @@
     font-weight: 600;
     margin-bottom: rem(5);
     text-align: center;
+    color: rgb(153, 28, 134);
   }
   &__errorText {
-    color: #54585a;
+    color: rgb(160, 30, 140);
     font-size: rem(14);
     font-weight: 600;
     margin-top: rem(15);
@@ -85,7 +86,7 @@
     text-align: center;
   }
   &__cardLink {
-    color: $primary-color;
+    color: rgb(214, 100, 197);
     font-size: rem(12);
     width: 292px;
     height: 17px;

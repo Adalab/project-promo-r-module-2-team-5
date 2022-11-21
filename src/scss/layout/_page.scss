@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   font-family: $font-main;
 }
@@ -12,10 +12,9 @@ body {
 .create-main {
   display: flex;
   flex-direction: column;
-
+  background-color: rgba(227, 166, 235, 0.1);
   @media all and (min-width: 768px) {
     flex-direction: row-reverse;
-    background: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
     min-height: 80vh;
   }
 }
