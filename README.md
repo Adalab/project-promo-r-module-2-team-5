@@ -1,4 +1,4 @@
-![Star Cards logo](./docs/assets/images/star-cards-logo.jpg)
+![Star Cards logo](./docs/assets/images/logo_plain.png)
 
 # Star Cards
 
