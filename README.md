@@ -29,3 +29,9 @@ Once you have landed, by pressing on the **Comenzar** button at the bottom of th
 Thank you so much for visiting our ship and we hope you enjoyed our project as much as we did developing it.
 
 **Project mocked up and developed by Paula Masutier, Mónica Hidalgo, Rebeca Gómez, Sara Rivera and Yara Paz.**
+
+@yarapaz
+@pmasutie
+@mhidalgoma
+@SaraRivAl
+@Becky-Gomez-Castillejos
