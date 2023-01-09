@@ -30,8 +30,9 @@ Thank you so much for visiting our ship and we hope you enjoyed our project as m
 
 **Project mocked up and developed by Paula Masutier, Mónica Hidalgo, Rebeca Gómez, Sara Rivera and Yara Paz.**
 
-@yarapaz
-@pmasutie
-@mhidalgoma
-@SaraRivAl
-@Becky-Gomez-Castillejos
+### Authors:
+- [@yarapaz](https://github.com/yarapaz)
+- [@pmasutie](https://github.com/pmasutie)
+- [@mhidalgoma](https://github.com/mhidalgoma)
+- [@SaraRivAl](https://github.com/SaraRivAl)
+- [@Becky-Gomez-Castillejos](https://github.com/Becky-Gomez-Castillejos)
