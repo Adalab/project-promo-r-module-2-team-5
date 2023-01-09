@@ -14,17 +14,17 @@ Clicking on the GitHub Pages link attached above in the description you will tra
 
 Once you have landed, by pressing on the **Comenzar** button at the bottom of the page, you will be redirected to the control room where you will be able to design your own card following these steps:
 
+1. **Choose a set of colors for your card**
+
 ![Star Cards Design](./docs/assets/images/star-cards-design.jpg)
 
-1. Choose a set of colors for your card
+2. **Fill the form with the personal information and media links your professional card will share**
 
 ![Star Cards Fill](./docs/assets/images/star-cards-fill.jpg)
 
-2. Fill the form with the personal information and media links your professional card will share
+3. **Create your card link and Share it with your friends using the link or through Twitter**
 
 ![Star Cards Share](./docs/assets/images/star-cards-share.jpg)
-
-3. Create your card link and Share it with your friends using the link or through Twitter
 
 Thank you so much for visiting our ship and we hope you enjoyed our project as much as we did developing it.
 
